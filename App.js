@@ -7,40 +7,37 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Orders from "./screens/Orders";
 import Travels from "./screens/Travels";
 import Earnings from "./screens/Earnings";
+import Profile from "./screens/Profile";
 
 export default function App() {
 
     let Stack = createNativeStackNavigator();
-
     //let Drawer = createDrawerNavigator();
-
-
     const Tab = createBottomTabNavigator();
 
-
     return (
+        //Options de labels dans le menu navigation
         <NavigationContainer>
-            <Tab.Navigator>
-                <Tab.Screen name="Home"
+            <Tab.Navigator
+                tabBarOptions={{
+                activeTintColor :'#ff3333', inactiveTintColor : 'gray',
+                labelStyle: { paddingBottom: 2, fontWeight: '100', fontSize: 11, paddingTop:0 }
+            }}
+            >
+                <Tab.Screen name="Home" style={styles.navLabelStyle}
                             component={Home}
                             options={{
                                 tabBarLabel: 'Home',
-                                tabBarOptions: {
-                                    activeTintColor: '#81B347'
-                                },
                                 tabBarIcon: ({ color, size }) => (
-                                    <MaterialIcons name ="home" size = {24} color = "gray" />
+                                    <MaterialIcons  name ="home" style={styles.navIconStyle}/>
                                 ),
                             }}/>
                 <Tab.Screen name="Orders"
                             component={Orders}
                             options={{
                                 tabBarLabel: 'Orders',
-                                tabBarOptions: {
-                                    activeTintColor: '#81B347'
-                                },
                                 tabBarIcon: ({ color, size }) => (
-                                    <MaterialIcons name ="shopping-cart" size = {24} color = "gray" />
+                                    <MaterialIcons name ="shopping-cart" style={styles.navIconStyle}/>
                                 ),
                             }}/>
 
@@ -48,11 +45,8 @@ export default function App() {
                             component={Travels}
                             options={{
                                 tabBarLabel: 'Travels',
-                                tabBarOptions: {
-                                    activeTintColor: '#81B347'
-                                },
                                 tabBarIcon: ({ color, size }) => (
-                                    <Ionicons name ="airplane" size = {24} color = "gray" />
+                                    <Ionicons name ="airplane" style={styles.navIconStyle}/>
                                 ),
                             }}/>
 
@@ -60,11 +54,16 @@ export default function App() {
                             component={Earnings}
                             options={{
                                 tabBarLabel: 'Earnings',
-                                tabBarOptions: {
-                                    activeTintColor: '#81B347'
-                                },
                                 tabBarIcon: ({ color, size }) => (
-                                    <FontAwesome name="dollar" size={24} color="black" />
+                                    <FontAwesome name="dollar" style={styles.navIconStyle}/>
+                                ),
+                            }}/>
+                <Tab.Screen name="Profile"
+                            component={Profile}
+                            options={{
+                                tabBarLabel: 'Profile',
+                                tabBarIcon: ({ color, size }) => (
+                                    <Ionicons name="person" style={styles.navIconStyle}/>
                                 ),
                             }}/>
             </Tab.Navigator>
@@ -79,7 +78,20 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
+    navLabelStyle: {
+        //activeTintColor : 'red',
+        //inactiveTintColor : 'green',
+        //labelStyle: { paddingBottom: 4, fontSize: 12, paddingTop:0 }
+        paddingBottom: 4,
+        fontSize: 12,
+        paddingTop:0
+    },
+    navIconStyle: {
+        fontSize : 22,
+        color : 'gray',
+        paddingTop :4
+    }
 });
 
