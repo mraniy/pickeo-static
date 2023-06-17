@@ -21,7 +21,7 @@ export default function App() {
             <Tab.Navigator
                 tabBarOptions={{
                 activeTintColor :'#ff3333', inactiveTintColor : 'gray',
-                labelStyle: { paddingBottom: 2, fontWeight: '100', fontSize: 11, paddingTop:0 }
+                labelStyle: { paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop:0 }
             }}
             >
                 <Tab.Screen name="Home" style={styles.navLabelStyle}
@@ -81,17 +81,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     navLabelStyle: {
-        //activeTintColor : 'red',
-        //inactiveTintColor : 'green',
-        //labelStyle: { paddingBottom: 4, fontSize: 12, paddingTop:0 }
         paddingBottom: 4,
-        fontSize: 12,
         paddingTop:0
     },
     navIconStyle: {
-        fontSize : 22,
+        fontSize : 24,
         color : 'gray',
-        paddingTop :4
+        paddingTop :6
     }
 });
 
