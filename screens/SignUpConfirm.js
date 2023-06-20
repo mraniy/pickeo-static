@@ -1,10 +1,10 @@
 import {StyleSheet, Text, View} from "react-native";
 
 
-const Home = ({navigation}) => {
+const SignUpConfirm = ({navigation}) => {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home</Text>
+            <Text>An email has been sent , please confirm your email!</Text>
         </View>
     )
 }
@@ -25,4 +25,4 @@ const styles= StyleSheet.create({
     }
 })
 
-export  default Home
+export  default SignUpConfirm
