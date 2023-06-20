@@ -21,15 +21,24 @@ export default function App() {
     const Tab = createBottomTabNavigator();
     function StackNavigator() {
         return (<Stack.Navigator>
-            <Stack.Screen name="HomeScreen" style={styles.navLabelStyle}
-                          component={Home}/>
+            <Stack.Screen name="Home" style={styles.navLabelStyle}
+                          component={Home}
+                          options={({navigation}) => ({
+                              headerRight: () => (
+                                  <Button
+                                      onPress={() => navigation.navigate('Login')}
+                                      title="Login"
+                                      color="#000"
+                                  />
+                              )
+                          })}/>
             <Stack.Screen name="Login" style={styles.navLabelStyle}
-                        component={Login}/>
+                          component={Login}/>
             <Stack.Screen name="SignUp" style={styles.navLabelStyle}
-                        component={SignUp}
-                        />
+                          component={SignUp}
+            />
             <Stack.Screen name="SignUpConfirmation" style={styles.navLabelStyle}
-                        component={SignUpConfirm}/>
+                          component={SignUpConfirm}/>
 
         </Stack.Navigator>)
     }
@@ -53,6 +62,7 @@ export default function App() {
                         component={StackNavigator}
                         options={{
                             tabBarLabel: 'Home',
+                            headerShown: false,
                             tabBarIcon: ({color, size}) => (
                                 <MaterialIcons name="home" style={styles.navIconStyle}/>
                             ),
