@@ -28,7 +28,7 @@ export default function App() {
             <Stack.Screen name="SignUp" style={styles.navLabelStyle}
                         component={SignUp}
                         />
-            <Stack.Screen name="SignUpConfirm" style={styles.navLabelStyle}
+            <Stack.Screen name="SignUpConfirmation" style={styles.navLabelStyle}
                         component={SignUpConfirm}/>
 
         </Stack.Navigator>)
