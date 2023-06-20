@@ -1,4 +1,4 @@
-import {Button, StyleSheet} from 'react-native';
+import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Home from "./screens/tabs/Home";
@@ -12,6 +12,7 @@ import React from "react";
 import Login from "./screens/stack/Login";
 import SignUp from "./screens/stack/Signup";
 import SignUpConfirm from "./screens/stack/SignUpConfirm";
+import GlobalStyles from "./screens/styles/GlobalStyles";
 
 export default function App() {
 
@@ -25,11 +26,9 @@ export default function App() {
                           component={Home}
                           options={({navigation}) => ({
                               headerRight: () => (
-                                  <Button
-                                      onPress={() => navigation.navigate('Login')}
-                                      title="Login"
-                                      color="#000"
-                                  />
+                                  <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                                      <Text style={GlobalStyles.linkText}>Login</Text>
+                                  </TouchableOpacity>
                               )
                           })}/>
             <Stack.Screen name="Login" style={styles.navLabelStyle}
@@ -48,15 +47,6 @@ export default function App() {
                 activeTintColor: '#ff3333', inactiveTintColor: 'gray',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0}
             }}
-            screenOptions={({navigation}) => ({
-                headerRight: () => (
-                    <Button
-                        onPress={() => navigation.navigate('Login')}
-                        title="Login"
-                        color="#000"
-                    />
-                )
-            })}
         >
             <Tab.Screen name="Home" style={styles.navLabelStyle}
                         component={StackNavigator}
@@ -117,11 +107,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
+
     navLabelStyle: {
         paddingBottom: 4,
         paddingTop: 0
