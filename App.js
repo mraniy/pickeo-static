@@ -50,7 +50,7 @@ export default function App() {
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0}
             }}
         >
-            <Tab.Screen name="Home" style={styles.navLabelStyle}
+            <Tab.Screen name="HomeScreen" style={styles.navLabelStyle}
                         component={StackNavigator}
                         options={{
                             tabBarLabel: 'Home',
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
 
     headerLinkStyle: {
         fontSize: 16,
-        fontWeight: '650',
+        fontWeight: '600',
         color : '#2584cc'
     },
 });
