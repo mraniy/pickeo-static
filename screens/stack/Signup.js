@@ -1,6 +1,7 @@
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
-import {useState} from "react";
+import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
+import StyledButton from "../../components/StyledButton";
 
 
 const SignUp = ({navigation}) => {
@@ -69,14 +70,11 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style = {GlobalStyles.viewRowContainer}>
-                <TouchableOpacity style={GlobalStyles.buttonContainer} onPress={() => navigation.navigate('SignUpConfirmation')}>
-                    <Text style={GlobalStyles.btnText}>Sign up</Text>
-                </TouchableOpacity>
+                <StyledButton buttonLink={"SignUpConfirmation"} buttonLabel={"Sign up"}/>
             </View>
         </View>
 
     )
 }
-
 
 export default SignUp

@@ -1,7 +1,7 @@
 import {Text, TouchableOpacity, View} from "react-native";
 import GlobalStyles from "../screens/styles/GlobalStyles";
 import {useNavigation} from "@react-navigation/core";
-const CustomizedButton = ({buttonLink, buttonLabel}) => {
+const StyledButton = ({buttonLink, buttonLabel}) => {
     let navigation = useNavigation();
     return (
         <TouchableOpacity style={GlobalStyles.buttonContainer} onPress={() => navigation.navigate(buttonLink)}>
@@ -9,4 +9,4 @@ const CustomizedButton = ({buttonLink, buttonLabel}) => {
         </TouchableOpacity>
     )
 }
-export default CustomizedButton
+export default StyledButton

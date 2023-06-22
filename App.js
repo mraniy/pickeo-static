@@ -22,9 +22,10 @@ export default function App() {
     const Tab = createBottomTabNavigator();
     function StackNavigator() {
         return (<Stack.Navigator>
-            <Stack.Screen name="Home" style={styles.navLabelStyle}
+            <Stack.Screen name="Home"
                           component={Home}
                           options={({navigation}) => ({
+                              //Refactor
                               headerRight: () => (
                                   <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                                       <FontAwesome name="user-o" style={styles.headerIconStyle}/>
@@ -32,25 +33,26 @@ export default function App() {
                                   </TouchableOpacity>
                               )
                           })}/>
-            <Stack.Screen name="Login" style={styles.navLabelStyle}
+            <Stack.Screen name="Login"
                           component={Login}/>
-            <Stack.Screen name="SignUp" style={styles.navLabelStyle}
+            <Stack.Screen name="SignUp"
                           component={SignUp}
             />
-            <Stack.Screen name="SignUpConfirmation" style={styles.navLabelStyle}
+            <Stack.Screen name="SignUpConfirmation"
                           component={SignUpConfirm}/>
 
         </Stack.Navigator>)
     }
-    //Dont delete try these 9c3560 active tiny color e32977 ff7733 f95807 FF5F1F
+    //Dont delete try these active tint color 9c3560 e32977 ff7733 f95807 FF5F1F d05919 f15c20
+    //inactive tint color  40828c 40678c
     function TabNavigator() {
         return (<Tab.Navigator
             tabBarOptions={{
-                activeTintColor: '#FF5F1F', inactiveTintColor: 'gray',
-                labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0}
+                activeTintColor: '#f15c20', inactiveTintColor: '#40678c',
+                labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2}
             }}
         >
-            <Tab.Screen name="HomeScreen" style={styles.navLabelStyle}
+            <Tab.Screen name="HomeScreenTab"
                         component={StackNavigator}
                         options={{
                             tabBarLabel: 'Home',
@@ -109,11 +111,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
 
-    navLabelStyle: {
-        paddingBottom: 4,
-        paddingTop: 0
-    },
-
     navIconStyle: {
         fontSize: 25,
         color: 'gray',
@@ -124,12 +121,12 @@ const styles = StyleSheet.create({
         fontSize: 22,
         color: '#280f00',
         paddingTop: 2,
-        paddingLeft: 10
+        paddingLeft: 8
 
     },
 
     headerLinkStyle: {
-        fontSize: 16,
+        fontSize: 14,
         fontWeight: '600',
         color : '#2584cc'
     },

@@ -2,7 +2,7 @@ import {Text, TouchableOpacity} from "react-native";
 import GlobalStyles from "../screens/styles/GlobalStyles";
 import {useNavigation} from "@react-navigation/core";
 
-const CustomizedLink = ({link,linkLabel,style}) => {
+const StyledLink = ({link,linkLabel,style}) => {
     let navigation = useNavigation();
     return (
         <TouchableOpacity style = {style} onPress={() => navigation.navigate(link)}>
@@ -10,4 +10,4 @@ const CustomizedLink = ({link,linkLabel,style}) => {
         </TouchableOpacity>
     )
 }
-export default CustomizedLink
+export default StyledLink

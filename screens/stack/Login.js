@@ -1,6 +1,8 @@
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
-import {useState} from "react";
+import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
+import StyledButton from "../../components/StyledButton";
+import StyledLink from "../../components/StyledLink";
 
 
 const Login = ({navigation}) => {
@@ -28,12 +30,8 @@ const Login = ({navigation}) => {
                 />
             </View>
             <View style = {GlobalStyles.viewRowContainer}>
-                <TouchableOpacity style={GlobalStyles.buttonContainer} onPress={() => navigation.navigate('Home')}>
-                    <Text style={GlobalStyles.btnText}>Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={GlobalStyles.centeredLinkContainer} onPress={() => navigation.navigate('SignUp')}>
-                    <Text style={GlobalStyles.linkText} >Sign up</Text>
-                </TouchableOpacity>
+                <StyledButton buttonLink={"Home"} buttonLabel={"Login"}/>
+                <StyledLink link={"SignUp"} linkLabel={"Sign up"} style={GlobalStyles.centeredLinkContainer}/>
             </View>
         </View>
 
