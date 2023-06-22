@@ -27,7 +27,8 @@ export default function App() {
                           options={({navigation}) => ({
                               headerRight: () => (
                                   <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                                      <Text style={GlobalStyles.linkText}>Login</Text>
+                                      <FontAwesome name="user-o" style={styles.headerIconStyle}/>
+                                      <Text style={styles.headerLinkStyle}>Login</Text>
                                   </TouchableOpacity>
                               )
                           })}/>
@@ -41,10 +42,11 @@ export default function App() {
 
         </Stack.Navigator>)
     }
+    //Dont delete try these 9c3560 active tiny color e32977 ff7733 f95807 FF5F1F
     function TabNavigator() {
         return (<Tab.Navigator
             tabBarOptions={{
-                activeTintColor: '#ff3333', inactiveTintColor: 'gray',
+                activeTintColor: '#FF5F1F', inactiveTintColor: 'gray',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0}
             }}
         >
@@ -54,7 +56,7 @@ export default function App() {
                             tabBarLabel: 'Home',
                             headerShown: false,
                             tabBarIcon: ({color, size}) => (
-                                <MaterialIcons name="home" style={styles.navIconStyle}/>
+                                <Ionicons name="home-outline" style={styles.navIconStyle}/>
                             ),
                         }}/>
 
@@ -63,7 +65,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Orders',
                             tabBarIcon: ({color, size}) => (
-                                <MaterialIcons name="shopping-cart" style={styles.navIconStyle}/>
+                                <Ionicons name="cart-outline" style={styles.navIconStyle}/>
                             ),
                         }}/>
 
@@ -72,7 +74,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Travels',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="airplane" style={styles.navIconStyle}/>
+                                <Ionicons name="airplane-outline" style={styles.navIconStyle}/>
                             ),
                         }}/>
 
@@ -81,7 +83,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Earnings',
                             tabBarIcon: ({color, size}) => (
-                                <FontAwesome name="dollar" style={styles.navIconStyle}/>
+                                <Ionicons name="cash-outline" style={styles.navIconStyle}/>
                             ),
                         }}/>
             <Tab.Screen name="Profile"
@@ -89,12 +91,11 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Profile',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="person" style={styles.navIconStyle}/>
+                                <Ionicons name="person-outline" style={styles.navIconStyle}/>
                             ),
                         }}/>
         </Tab.Navigator>)
     }
-
 
 
     return (
@@ -112,10 +113,26 @@ const styles = StyleSheet.create({
         paddingBottom: 4,
         paddingTop: 0
     },
+
     navIconStyle: {
         fontSize: 25,
         color: 'gray',
         paddingTop: 6
-    }
+    },
+
+    headerIconStyle: {
+        fontSize: 22,
+        color: '#280f00',
+        paddingTop: 2,
+        paddingLeft: 9
+
+    },
+
+    headerLinkStyle: {
+        fontSize: 15,
+        fontWeight: '650',
+        color : '#2584cc'
+    },
 });
+
 

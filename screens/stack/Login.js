@@ -9,30 +9,30 @@ const Login = ({navigation}) => {
     return (
         <View style={GlobalStyles.formContainer}>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>login</Text>
+                <Text style={GlobalStyles.label}>Login</Text>
                 <TextInput
-                    placeholder="enter your e-mail"
+                    placeholder="Enter your e-mail"
                     value={login}
                     onChangeText={text => setLogin(text)}
                     style={GlobalStyles.input}
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>password</Text>
+                <Text style={GlobalStyles.label}>Password</Text>
                 <TextInput
-                    placeholder="enter your password"
+                    placeholder="Enter your password"
                     value={password}
                     onChangeText={text => setPassword(text)}
                     secureTextEntry={true}
                     style={GlobalStyles.input}
                 />
             </View>
-            <View style = {GlobalStyles.linkContainer}>
-                <TouchableOpacity style={GlobalStyles.sendContainer} onPress={() => navigation.navigate('Home')}>
-                    <Text style={GlobalStyles.btnText}>send</Text>
+            <View style = {GlobalStyles.viewRowContainer}>
+                <TouchableOpacity style={GlobalStyles.buttonContainer} onPress={() => navigation.navigate('Home')}>
+                    <Text style={GlobalStyles.btnText}>Login</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={GlobalStyles.signUpContainer} onPress={() => navigation.navigate('SignUp')}>
-                    <Text style={GlobalStyles.linkText}>sign up</Text>
+                <TouchableOpacity style={GlobalStyles.centeredLinkContainer} onPress={() => navigation.navigate('SignUp')}>
+                    <Text style={GlobalStyles.linkText} >Sign up</Text>
                 </TouchableOpacity>
             </View>
         </View>

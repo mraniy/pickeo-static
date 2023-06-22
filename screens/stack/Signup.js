@@ -13,45 +13,45 @@ const SignUp = ({navigation}) => {
     return (
         <View style={GlobalStyles.formContainer}>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>first name</Text>
+                <Text style={GlobalStyles.label}>First name</Text>
                 <TextInput
-                    placeholder="enter your first name"
+                    placeholder="Enter your first name"
                     value={firstName}
                     onChangeText={text => setFirstName(text)}
                     style={GlobalStyles.input}
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>last name</Text>
+                <Text style={GlobalStyles.label}>Last name</Text>
                 <TextInput
-                    placeholder="enter your last name"
+                    placeholder="Enter your last name"
                     value={lastName}
                     onChangeText={text => setLastName(text)}
                     style={GlobalStyles.input}
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>phone number</Text>
+                <Text style={GlobalStyles.label}>Phone number</Text>
                 <TextInput
-                    placeholder="enter your phone number"
+                    placeholder="Enter your phone number"
                     value={phone}
                     onChangeText={text => setPhone(text)}
                     style={GlobalStyles.input}
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>login</Text>
+                <Text style={GlobalStyles.label}>Login</Text>
                 <TextInput
-                    placeholder="enter your e-mail"
+                    placeholder="Enter your e-mail"
                     value={login}
                     onChangeText={text => setLogin(text)}
                     style={GlobalStyles.input}
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>password</Text>
+                <Text style={GlobalStyles.label}>Password</Text>
                 <TextInput
-                    placeholder="enter your password"
+                    placeholder="Enter your password"
                     value={password}
                     onChangeText={text => setPassword(text)}
                     secureTextEntry={true}
@@ -59,18 +59,18 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>confirm your password</Text>
+                <Text style={GlobalStyles.label}>Confirm your password</Text>
                 <TextInput
-                    placeholder="confirm your password"
+                    placeholder="Confirm your password"
                     value={passwordConfirmation}
                     onChangeText={text => setPasswordConfirmation(text)}
                     secureTextEntry={true}
                     style={GlobalStyles.input}
                 />
             </View>
-            <View style = {GlobalStyles.linkContainer}>
-                <TouchableOpacity style={GlobalStyles.sendContainer} onPress={() => navigation.navigate('SignUpConfirmation')}>
-                    <Text style={GlobalStyles.btnText}>send</Text>
+            <View style = {GlobalStyles.viewRowContainer}>
+                <TouchableOpacity style={GlobalStyles.buttonContainer} onPress={() => navigation.navigate('SignUpConfirmation')}>
+                    <Text style={GlobalStyles.btnText}>Sign up</Text>
                 </TouchableOpacity>
             </View>
         </View>

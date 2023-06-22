@@ -2,22 +2,35 @@ import {StyleSheet} from "react-native";
 
 const GlobalStyles = StyleSheet.create({
 
-    linkContainer : {
-        flexDirection: 'row'
+    viewRowContainer : {
+        flexDirection: 'row',
+
     },
-    btnText: {
-        fontSize: 19,
+
+    viewColumnContainer : {
+        flexDirection: 'column',
+
     },
-    sendContainer: {
+
+    buttonContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
-        paddingVertical: 25,
+        paddingVertical: 12,
         backgroundColor: 'lightblue',
-        marginTop: 20,
+        marginTop: 30,
+        height: "50%",
         width: '40%',
         alignItems: 'center'
     },
-    signUpContainer: {
+
+    btnText: {
+        fontSize: 16,
+        fontWeight: '600',
+        color : '#2584cc'
+
+    },
+
+    linkContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
         paddingVertical: 25,
@@ -25,6 +38,23 @@ const GlobalStyles = StyleSheet.create({
         width: '40%',
         alignItems: 'center'
     },
+
+    centeredLinkContainer: {
+        borderRadius: 6,
+        paddingHorizontal: 9,
+        paddingVertical: 25,
+        marginTop: 20,
+        width: '40%',
+        alignItems: 'center'
+    },
+
+
+    linkText: {
+        fontSize: 16,
+        fontWeight: '800',
+        color : '#2584cc'
+    },
+
     input: {
         paddingHorizontal: 9,
         paddingVertical: 9,
@@ -46,13 +76,12 @@ const GlobalStyles = StyleSheet.create({
     },
     label: {
         marginVertical: 15,
-        color: 'green',
+        color: '#357b9c',
         fontWeight: 'bold'
     },
-    linkText: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        color : 'blue'
-    }
+
+    message: {
+        paddingTop : 10
+    },
 })
 export default GlobalStyles
