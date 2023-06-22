@@ -124,12 +124,12 @@ const styles = StyleSheet.create({
         fontSize: 22,
         color: '#280f00',
         paddingTop: 2,
-        paddingLeft: 9
+        paddingLeft: 10
 
     },
 
     headerLinkStyle: {
-        fontSize: 15,
+        fontSize: 16,
         fontWeight: '650',
         color : '#2584cc'
     },

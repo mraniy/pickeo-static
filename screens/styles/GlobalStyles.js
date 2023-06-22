@@ -15,7 +15,7 @@ const GlobalStyles = StyleSheet.create({
     buttonContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
-        paddingVertical: 12,
+        paddingVertical: 10,
         backgroundColor: 'lightblue',
         marginTop: 30,
         height: "50%",
@@ -26,7 +26,7 @@ const GlobalStyles = StyleSheet.create({
     btnText: {
         fontSize: 16,
         fontWeight: '600',
-        color : '#2584cc'
+        color : '#0e535b'
 
     },
 
@@ -42,7 +42,7 @@ const GlobalStyles = StyleSheet.create({
     centeredLinkContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
-        paddingVertical: 25,
+        paddingVertical: 23,
         marginTop: 20,
         width: '40%',
         alignItems: 'center'
