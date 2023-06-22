@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 import StyledButton from "../../components/StyledButton";
 import StyledLink from "../../components/StyledLink";
+import StyledLabel from "../../components/StyledLabel";
 
 
 const Login = ({navigation}) => {
@@ -11,7 +12,7 @@ const Login = ({navigation}) => {
     return (
         <View style={GlobalStyles.formContainer}>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Login</Text>
+                <StyledLabel labelText={"Login"}/>
                 <TextInput
                     placeholder="Enter your e-mail"
                     value={login}
@@ -20,7 +21,7 @@ const Login = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Password</Text>
+                <StyledLabel labelText={"Password"}/>
                 <TextInput
                     placeholder="Enter your password"
                     value={password}

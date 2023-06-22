@@ -2,6 +2,7 @@ import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native"
 import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 import StyledButton from "../../components/StyledButton";
+import StyledLabel from "../../components/StyledLabel";
 
 
 const SignUp = ({navigation}) => {
@@ -14,7 +15,7 @@ const SignUp = ({navigation}) => {
     return (
         <View style={GlobalStyles.formContainer}>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>First name</Text>
+                <StyledLabel labelText={"First name"}/>
                 <TextInput
                     placeholder="Enter your first name"
                     value={firstName}
@@ -23,7 +24,7 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Last name</Text>
+                <StyledLabel labelText={"Last name"}/>
                 <TextInput
                     placeholder="Enter your last name"
                     value={lastName}
@@ -32,7 +33,7 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Phone number</Text>
+                <StyledLabel labelText={"Phone number"}/>
                 <TextInput
                     placeholder="Enter your phone number"
                     value={phone}
@@ -41,7 +42,7 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Login</Text>
+                <StyledLabel labelText={"Login"}/>
                 <TextInput
                     placeholder="Enter your e-mail"
                     value={login}
@@ -50,7 +51,7 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Password</Text>
+                <StyledLabel labelText={"Password"}/>
                 <TextInput
                     placeholder="Enter your password"
                     value={password}
@@ -60,7 +61,7 @@ const SignUp = ({navigation}) => {
                 />
             </View>
             <View style={GlobalStyles.formControl}>
-                <Text style={GlobalStyles.label}>Confirm your password</Text>
+                <StyledLabel labelText={"Confirm your password"}/>
                 <TextInput
                     placeholder="Confirm your password"
                     value={passwordConfirmation}
