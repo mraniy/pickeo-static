@@ -13,6 +13,7 @@ import Login from "./screens/stack/Login";
 import SignUp from "./screens/stack/Signup";
 import SignUpConfirm from "./screens/stack/SignUpConfirm";
 import GlobalStyles from "./screens/styles/GlobalStyles";
+import NewProductRequests from "./screens/stack/orders/NewProductRequests";
 
 export default function App() {
 
@@ -33,6 +34,8 @@ export default function App() {
                                   </TouchableOpacity>
                               )
                           })}/>
+            <Stack.Screen name="ProductRequests"
+                          component={NewProductRequests}/>
             <Stack.Screen name="Login"
                           component={Login}/>
             <Stack.Screen name="SignUp"
