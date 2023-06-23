@@ -15,10 +15,10 @@ const GlobalStyles = StyleSheet.create({
     buttonContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
-        paddingVertical: 10,
+        paddingVertical: 12,
         backgroundColor: 'lightblue',
         marginTop: 30,
-        height: "50%",
+        height: "60%",
         width: '40%',
         alignItems: 'center'
     },

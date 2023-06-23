@@ -4,6 +4,7 @@ import GlobalStyles from "../styles/GlobalStyles";
 import StyledButton from "../../components/StyledButton";
 import StyledLink from "../../components/StyledLink";
 import StyledLabel from "../../components/StyledLabel";
+import StyledTextInput from "../../components/StyledTextInput";
 
 
 const Login = ({navigation}) => {
@@ -13,22 +14,17 @@ const Login = ({navigation}) => {
         <View style={GlobalStyles.formContainer}>
             <View style={GlobalStyles.formControl}>
                 <StyledLabel labelText={"Login"}/>
-                <TextInput
-                    placeholder="Enter your e-mail"
-                    value={login}
-                    onChangeText={text => setLogin(text)}
-                    style={GlobalStyles.input}
-                />
+                <StyledTextInput placeholder="Enter your e-mail"
+                                 value={login}
+                                 onChangeText={text => setLogin(text)}/>
             </View>
             <View style={GlobalStyles.formControl}>
                 <StyledLabel labelText={"Password"}/>
-                <TextInput
-                    placeholder="Enter your password"
-                    value={password}
-                    onChangeText={text => setPassword(text)}
-                    secureTextEntry={true}
-                    style={GlobalStyles.input}
-                />
+                <StyledTextInput placeholder="Enter your password"
+                                 value={password}
+                                 onChangeText={text => setPassword(text)}
+                                 secure={true}
+                                 />
             </View>
             <View style = {GlobalStyles.viewRowContainer}>
                 <StyledButton buttonLink={"Home"} buttonLabel={"Login"}/>

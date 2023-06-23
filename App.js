@@ -47,7 +47,7 @@ export default function App() {
     //inactive tint color  40828c 40678c
     function TabNavigator() {
         return (<Tab.Navigator
-            tabBarOptions={{
+            screenOptions={{
                 activeTintColor: '#f15c20', inactiveTintColor: '#40678c',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2}
             }}
