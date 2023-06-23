@@ -36,7 +36,7 @@ const NewProductRequests = ({navigation}) => {
 
             </View>
             <View style = {GlobalStyles.viewRowContainer}>
-                <StyledButton buttonLink={"Home"} buttonLabel={"Submit"}/>
+                <StyledButton buttonLink={"ProductRequests"} buttonLabel={"Submit"}/>
             </View>
         </View>
     )

@@ -14,6 +14,7 @@ import SignUp from "./screens/stack/Signup";
 import SignUpConfirm from "./screens/stack/SignUpConfirm";
 import GlobalStyles from "./screens/styles/GlobalStyles";
 import NewProductRequests from "./screens/stack/orders/NewProductRequests";
+import ProductRequests from "./screens/stack/orders/ProductRequests";
 
 export default function App() {
 
@@ -34,8 +35,10 @@ export default function App() {
                                   </TouchableOpacity>
                               )
                           })}/>
-            <Stack.Screen name="ProductRequests"
+            <Stack.Screen name="NewProductRequests"
                           component={NewProductRequests}/>
+            <Stack.Screen name="ProductRequests"
+                          component={ProductRequests}/>
             <Stack.Screen name="Login"
                           component={Login}/>
             <Stack.Screen name="SignUp"
