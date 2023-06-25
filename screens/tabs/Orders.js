@@ -13,7 +13,6 @@ function MyTabs() {
     return (
         <Tab.Navigator>
             <Tab.Screen name="New" component={NewProductRequests}/>
-            <Tab.Screen name="Old" component={ProductRequests}/>
             <Tab.Screen name="Current" component={Profile}/>
             <Tab.Screen name="Delivered" component={Travels}/>
         </Tab.Navigator>
