@@ -13,8 +13,8 @@ import Login from "./screens/stack/Login";
 import SignUp from "./screens/stack/Signup";
 import SignUpConfirm from "./screens/stack/SignUpConfirm";
 import GlobalStyles from "./screens/styles/GlobalStyles";
-import NewProductRequests from "./screens/stack/orders/NewProductRequests";
-import ProductRequests from "./screens/stack/orders/ProductRequests";
+import NewOrder from "./screens/stack/orders/NewOrder";
+import OrdersWaiting from "./screens/stack/orders/OrdersWaiting";
 
 export default function App() {
 
@@ -36,9 +36,9 @@ export default function App() {
                               )
                           })}/>
             <Stack.Screen name="NewProductRequests"
-                          component={NewProductRequests}/>
+                          component={NewOrder}/>
             <Stack.Screen name="ProductRequests"
-                          component={ProductRequests}/>
+                          component={OrdersWaiting}/>
             <Stack.Screen name="Login"
                           component={Login}/>
             <Stack.Screen name="SignUp"

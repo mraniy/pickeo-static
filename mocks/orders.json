@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "message": "order 1",
+    "totalPrice": 200,
+    "status": "WAITING_FOR_DELIVERY",
+    "expectedDeliveryDate": "2023-06-25",
+    "deliveryDate": null
+  },
+  {
+    "id": 2,
+    "message": "order 2 order 2order 2order 2 order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2order 2",
+    "totalPrice": 100,
+    "status": "WAITING_FOR_VALIDATION",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null
+  },
+  {
+    "id": 3,
+    "message": "order 3",
+    "totalPrice": 150,
+    "status": "WAITING_FOR_TRAVELER",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null
+  },
+  {
+    "id": 4,
+    "message": "order 4",
+    "totalPrice": 250,
+    "status": "DELIVERED",
+    "expectedDeliveryDate": null,
+    "deliveryDate": "2023-06-25"
+  },
+  {
+    "id": 5,
+    "message": "order 5",
+    "totalPrice": 230,
+    "status": "WAITING_FOR_DELIVERY",
+    "expectedDeliveryDate": "2023-07-25",
+    "deliveryDate": null
+  },
+  {
+    "id": 6,
+    "message": "order 6",
+    "totalPrice": 140,
+    "status": "WAITING_FOR_VALIDATION",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null
+  },
+  {
+    "id": 7,
+    "message": "order 7",
+    "totalPrice": 230,
+    "status": "WAITING_FOR_TRAVELER",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null
+  },
+  {
+    "id": 8,
+    "message": "order 8 blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla",
+    "totalPrice": 210,
+    "status": "DELIVERED",
+    "expectedDeliveryDate": null,
+    "deliveryDate": "2023-08-27"
+  }
+]

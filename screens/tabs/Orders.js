@@ -1,10 +1,8 @@
 import {StyleSheet} from "react-native";
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-
-import Profile from "./Profile";
-import Travels from "./Travels";
-import NewProductRequests from "../stack/orders/NewProductRequests";
-import ProductRequests from "../stack/orders/ProductRequests";
+import NewOrder from "../stack/orders/NewOrder";
+import OrdersWaiting from "../stack/orders/OrdersWaiting";
+import UnitOrder from "../stack/orders/OrdersValidated";
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -12,13 +10,12 @@ const Tab = createMaterialTopTabNavigator();
 function MyTabs() {
     return (
         <Tab.Navigator>
-            <Tab.Screen name="New" component={NewProductRequests}/>
-            <Tab.Screen name="Current" component={Profile}/>
-            <Tab.Screen name="Delivered" component={Travels}/>
+            <Tab.Screen name="New" component={NewOrder}/>
+            <Tab.Screen name="Waiting" component={OrdersWaiting}/>
+            <Tab.Screen name="Validated" component={UnitOrder}/>
         </Tab.Navigator>
     );
 }
-
 
 const Orders = ({navigation}) => {
     return (

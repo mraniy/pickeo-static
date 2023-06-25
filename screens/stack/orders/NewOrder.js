@@ -6,7 +6,7 @@ import React, {useState} from "react";
 import NumericTextInput from "../../../components/NumercicTextInput";
 import StyledButton from "../../../components/StyledButton";
 
-const NewProductRequests = ({navigation}) => {
+const NewOrder = ({navigation}) => {
     const [message, setMessage] = useState('');
     const [price, setPrice] = useState('');
     const [travelerFee, setTravelerFee] = useState('');
@@ -54,4 +54,4 @@ const styles= StyleSheet.create({
     }
 })
 
-export  default NewProductRequests
+export  default NewOrder
