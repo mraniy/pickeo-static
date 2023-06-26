@@ -1,4 +1,4 @@
-import {StyleSheet, View} from "react-native";
+import {ScrollView, StyleSheet, View} from "react-native";
 import GlobalStyles from "../../styles/GlobalStyles";
 import StyledLabel from "../../../components/StyledLabel";
 import StyledTextInput from "../../../components/StyledTextInput";
@@ -12,36 +12,38 @@ const NewOrder = ({navigation}) => {
     const [travelerFee, setTravelerFee] = useState('');
 
     return (
-        <View style={GlobalStyles.formContainer}>
-            <View style={GlobalStyles.formControl}>
-                <StyledLabel labelText={"Message"}/>
-                <StyledTextInput placeholder=""
-                                 value={message}
-                                 multiline={true}
-                                 onChangeText={text => setMessage(text)
-                                 }
-                />
-            </View>
-            <View style={GlobalStyles.formControl}>
-                <StyledLabel labelText={"Price"}/>
-                <NumericTextInput value={price}
-                                 onChangeText={text => setPrice(text)}/>
+        <ScrollView>
+            <View style={GlobalStyles.formContainer}>
+                <View style={GlobalStyles.formControl}>
+                    <StyledLabel labelText={"Message"}/>
+                    <StyledTextInput placeholder=""
+                                     value={message}
+                                     multiline={true}
+                                     onChangeText={text => setMessage(text)
+                                     }
+                    />
+                </View>
+                <View style={GlobalStyles.formControl}>
+                    <StyledLabel labelText={"Price"}/>
+                    <NumericTextInput value={price}
+                                      onChangeText={text => setPrice(text)}/>
 
-            </View>
+                </View>
 
-            <View style={GlobalStyles.formControl}>
-                <StyledLabel labelText={"Traveler Fee"}/>
-                <NumericTextInput value={travelerFee}
-                                  onChangeText={text => setTravelerFee(text)}/>
+                <View style={GlobalStyles.formControl}>
+                    <StyledLabel labelText={"Traveler Fee"}/>
+                    <NumericTextInput value={travelerFee}
+                                      onChangeText={text => setTravelerFee(text)}/>
 
+                </View>
+                <View style={GlobalStyles.viewRowContainer}>
+                    <StyledButton buttonLink={"ProductRequests"} buttonLabel={"Submit"}/>
+                </View>
             </View>
-            <View style = {GlobalStyles.viewRowContainer}>
-                <StyledButton buttonLink={"ProductRequests"} buttonLabel={"Submit"}/>
-            </View>
-        </View>
+        </ScrollView>
     )
 }
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     textArea: {
         paddingHorizontal: 9,
         paddingVertical: 9,
@@ -49,9 +51,9 @@ const styles= StyleSheet.create({
         borderWidth: 0.5,
         borderRadius: 6,
         width: '100%',
-        height:200,
+        height: 200,
         textAlignVertical: 'top'
     }
 })
 
-export  default NewOrder
+export default NewOrder

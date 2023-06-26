@@ -1,8 +1,8 @@
-import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Home from "./screens/tabs/Home";
-import {FontAwesome, Ionicons, MaterialIcons} from "@expo/vector-icons";
+import {FontAwesome, Ionicons} from "@expo/vector-icons";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Orders from "./screens/tabs/Orders";
 import Travels from "./screens/tabs/Travels";
@@ -12,9 +12,9 @@ import React from "react";
 import Login from "./screens/stack/Login";
 import SignUp from "./screens/stack/Signup";
 import SignUpConfirm from "./screens/stack/SignUpConfirm";
-import GlobalStyles from "./screens/styles/GlobalStyles";
 import NewOrder from "./screens/stack/orders/NewOrder";
 import OrdersWaiting from "./screens/stack/orders/OrdersWaiting";
+import ProfileConfirm from "./screens/stack/profile/ProfileConfirm";
 
 export default function App() {
 
@@ -46,6 +46,9 @@ export default function App() {
             />
             <Stack.Screen name="SignUpConfirmation"
                           component={SignUpConfirm}/>
+
+            <Stack.Screen name="ProfileConfirm"
+                          component={ProfileConfirm}/>
 
         </Stack.Navigator>)
     }
