@@ -63,6 +63,7 @@ const GlobalStyles = StyleSheet.create({
         borderRadius: 6,
         width: '100%'
     },
+
     formContainer: {
         backgroundColor: 'white',
         borderRadius: 9,
