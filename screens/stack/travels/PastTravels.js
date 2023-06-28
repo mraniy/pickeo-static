@@ -12,7 +12,7 @@ const PastTravels = ({navigation}) => {
     }
 
     return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
             <FlatList data={retrieveData(['PAST'])}
                       renderItem={({item}) =>
                           <UnitPastTravel fromCity={item.fromCity}
