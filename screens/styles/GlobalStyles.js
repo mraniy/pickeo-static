@@ -68,6 +68,7 @@ const GlobalStyles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 9,
         padding: 20,
+        paddingTop: 6,
         margin: 20
 
     },
