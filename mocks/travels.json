@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "fromCity": "Paris",
+    "toCity": "Casablanca",
+    "travelDate": "2023-07-29"
+  },
+  {
+    "id": 1,
+    "userId": 1,
+    "fromCity": "Casablanca",
+    "toCity": "Paris",
+    "travelDate": "2023-08-15"
+  },
+  {
+    "id": 1,
+    "userId": 1,
+    "fromCity": "Rabat",
+    "toCity": "Lyon",
+    "travelDate": "2023-09-01"
+  },
+  {
+    "id": 1,
+    "userId": 1,
+    "fromCity": "Agadir",
+    "toCity": "Paris",
+    "travelDate": "2023-09-12"
+  }
+]

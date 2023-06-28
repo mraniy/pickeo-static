@@ -1,10 +1,10 @@
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
 import React, {useState} from "react";
-import GlobalStyles from "../styles/GlobalStyles";
-import StyledButton from "../../components/StyledButton";
-import StyledLink from "../../components/StyledLink";
-import StyledLabel from "../../components/StyledLabel";
-import StyledTextInput from "../../components/StyledTextInput";
+import GlobalStyles from "../../styles/GlobalStyles";
+import StyledButton from "../../../components/StyledButton";
+import StyledLink from "../../../components/StyledLink";
+import StyledLabel from "../../../components/StyledLabel";
+import StyledTextInput from "../../../components/StyledTextInput";
 
 
 const Login = ({navigation}) => {

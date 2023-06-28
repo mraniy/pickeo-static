@@ -1,9 +1,9 @@
 import {ScrollView, View} from "react-native";
 import React, {useState} from "react";
-import GlobalStyles from "../styles/GlobalStyles";
-import StyledButton from "../../components/StyledButton";
-import StyledLabel from "../../components/StyledLabel";
-import StyledTextInput from "../../components/StyledTextInput";
+import GlobalStyles from "../../styles/GlobalStyles";
+import StyledButton from "../../../components/StyledButton";
+import StyledLabel from "../../../components/StyledLabel";
+import StyledTextInput from "../../../components/StyledTextInput";
 
 
 const SignUp = ({navigation}) => {

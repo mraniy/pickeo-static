@@ -9,9 +9,9 @@ import Travels from "./screens/tabs/Travels";
 import Earnings from "./screens/tabs/Earnings";
 import Profile from "./screens/tabs/Profile";
 import React from "react";
-import Login from "./screens/stack/Login";
-import SignUp from "./screens/stack/Signup";
-import SignUpConfirm from "./screens/stack/SignUpConfirm";
+import Login from "./screens/stack/login/Login";
+import SignUp from "./screens/stack/login/Signup";
+import SignUpConfirm from "./screens/stack/login/SignUpConfirm";
 import NewOrder from "./screens/stack/orders/NewOrder";
 import OrdersWaiting from "./screens/stack/orders/OrdersWaiting";
 import ProfileConfirm from "./screens/stack/profile/ProfileConfirm";
@@ -52,8 +52,8 @@ export default function App() {
 
         </Stack.Navigator>)
     }
-    //Dont delete try these active tint color 9c3560 e32977 ff7733 f95807 FF5F1F d05919 f15c20
-    //inactive tint color  40828c 40678c
+    //Dont delete try these active tint color 9c3560 e32977 f15c20
+    //inactive tint color  40828c 40678c 174092
     function TabNavigator() {
         return (<Tab.Navigator
             tabBarOptions={{
