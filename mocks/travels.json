@@ -4,27 +4,31 @@
     "userId": 1,
     "fromCity": "Paris",
     "toCity": "Casablanca",
-    "travelDate": "2023-07-29"
+    "travelDate": "2023-07-29",
+    "status": "NEXT"
   },
   {
-    "id": 1,
+    "id": 2,
     "userId": 1,
     "fromCity": "Casablanca",
     "toCity": "Paris",
-    "travelDate": "2023-08-15"
+    "travelDate": "2023-08-15",
+    "status": "NEXT"
   },
   {
-    "id": 1,
+    "id": 3,
     "userId": 1,
     "fromCity": "Rabat",
     "toCity": "Lyon",
-    "travelDate": "2023-09-01"
+    "travelDate": "2023-09-01",
+    "status": "NEXT"
   },
   {
-    "id": 1,
+    "id": 4,
     "userId": 1,
     "fromCity": "Agadir",
     "toCity": "Paris",
-    "travelDate": "2023-09-12"
+    "travelDate": "2023-04-12",
+    "status": "PAST"
   }
 ]

@@ -5,16 +5,17 @@ import Home from "./screens/tabs/Home";
 import {FontAwesome, Ionicons} from "@expo/vector-icons";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Orders from "./screens/tabs/Orders";
-import Travels from "./screens/tabs/Travels";
+import NewTravel from "./screens/stack/travels/NewTravel";
 import Earnings from "./screens/tabs/Earnings";
 import Profile from "./screens/tabs/Profile";
 import React from "react";
 import Login from "./screens/stack/login/Login";
 import SignUp from "./screens/stack/login/Signup";
 import SignUpConfirm from "./screens/stack/login/SignUpConfirm";
-import NewOrder from "./screens/stack/orders/NewOrder";
 import OrdersWaiting from "./screens/stack/orders/OrdersWaiting";
 import ProfileConfirm from "./screens/stack/profile/ProfileConfirm";
+import Travels from "./screens/tabs/Travels";
+import NextTravels from "./screens/stack/travels/NextTravels";
 
 export default function App() {
 
@@ -49,6 +50,9 @@ export default function App() {
 
             <Stack.Screen name="ProfileConfirm"
                           component={ProfileConfirm}/>
+
+            <Stack.Screen name="NextTravels"
+                          component={NextTravels}/>
 
         </Stack.Navigator>)
     }
