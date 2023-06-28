@@ -1,5 +1,4 @@
 import {FlatList, StyleSheet, View} from "react-native";
-import UnitOrderWaiting from "./UnitOrderWaiting";
 import React from "react";
 import UnitOrderValidated from "./UnitOrderValidated";
 
@@ -16,11 +15,11 @@ const OrdersWaiting = ({navigation}) => {
             <FlatList data={retrieveData(['WAITING_FOR_PAYMENT', 'WAITING_FOR_DELIVERY', 'DELIVERED'])}
                       renderItem={({item}) =>
                           <UnitOrderValidated message={item.message}
-                                            id={item.id}
-                                            totalPrice={item.totalPrice}
-                                            status={item.status}
-                                            deliveryDate={item.deliveryDate}
-                                            expectedDeliveryDate={item.expectedDeliveryDate}
+                                              id={item.id}
+                                              totalPrice={item.totalPrice}
+                                              status={item.status}
+                                              deliveryDate={item.deliveryDate}
+                                              expectedDeliveryDate={item.expectedDeliveryDate}
                           />
                       }>
 

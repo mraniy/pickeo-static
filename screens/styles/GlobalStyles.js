@@ -2,12 +2,12 @@ import {StyleSheet} from "react-native";
 
 const GlobalStyles = StyleSheet.create({
 
-    viewRowContainer : {
+    viewRowContainer: {
         flexDirection: 'row',
 
     },
 
-    viewColumnContainer : {
+    viewColumnContainer: {
         flexDirection: 'column',
 
     },
@@ -26,7 +26,7 @@ const GlobalStyles = StyleSheet.create({
     btnText: {
         fontSize: 16,
         fontWeight: '600',
-        color : '#0e535b'
+        color: '#0e535b'
 
     },
 
@@ -52,7 +52,7 @@ const GlobalStyles = StyleSheet.create({
     linkText: {
         fontSize: 16,
         fontWeight: '800',
-        color : '#2584cc'
+        color: '#2584cc'
     },
 
     input: {
@@ -82,7 +82,7 @@ const GlobalStyles = StyleSheet.create({
     },
 
     message: {
-        paddingTop : 10
+        paddingTop: 10
     },
 })
 export default GlobalStyles

@@ -1,6 +1,6 @@
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
-import GlobalStyles from "../screens/styles/GlobalStyles";
+import {StyleSheet, TextInput} from "react-native";
 import React from "react";
+
 const NumericTextInput = ({placeholder, value, onChangeText}) => {
 
     return (
@@ -8,15 +8,15 @@ const NumericTextInput = ({placeholder, value, onChangeText}) => {
             placeholder={placeholder}
             value={value}
             onChangeText={onChangeText}
-            keyboardType = 'numeric'
-            style = {styles.numeric}
+            keyboardType='numeric'
+            style={styles.numeric}
         />
 
     )
 }
 export default NumericTextInput
 
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     numeric: {
         paddingHorizontal: 9,
         paddingVertical: 9,

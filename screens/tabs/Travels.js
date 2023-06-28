@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, TextInput, View, Platform, Pressable, Alert} from "react-native";
+import {Platform, Pressable, ScrollView, StyleSheet, View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 import StyledLabel from "../../components/StyledLabel";
@@ -11,19 +11,19 @@ const Travels = ({navigation}) => {
     const [fromCity, setFromCity] = useState('');
     const [toCity, setToCity] = useState('');
     const [travelDate, setTravelDate] = useState('');
-    const [pickerDate, setPickerDate] = useState (new Date());
-    const [showPicker, setShowPicker] = useState (false);
-    const [pickerMode, setPickerMode] = useState ("date");
+    const [pickerDate, setPickerDate] = useState(new Date());
+    const [showPicker, setShowPicker] = useState(false);
+    const [pickerMode, setPickerMode] = useState("date");
 
     const showMode = (currentMode) => {
-      setShowPicker (true);
-      setPickerMode (currentMode);
+        setShowPicker(true);
+        setPickerMode(currentMode);
     };
     const onChange = ({event}, selectedDate) => {
         const currentDate = selectedDate || pickerDate;
-        setShowPicker (Platform.OS==="IOS");
-        setPickerDate (currentDate);
-        setTravelDate (currentDate.toDateString());
+        setShowPicker(Platform.OS === "IOS");
+        setPickerDate(currentDate);
+        setTravelDate(currentDate.toDateString());
 
     };
 
@@ -42,22 +42,22 @@ const Travels = ({navigation}) => {
                     <StyledLabel labelText={"To"}/>
                     <StyledTextInput placeholder="To"
                                      value={toCity}
-                                      onChangeText={text => setToCity(text)}/>
+                                     onChangeText={text => setToCity(text)}/>
 
                 </View>
 
                 <View style={GlobalStyles.formControl}>
                     <StyledLabel labelText={"Travel Date"}/>
 
-                    <Pressable onPress={() =>showMode("date")}>
+                    <Pressable onPress={() => showMode("date")}>
                         <StyledDateInput placeholder="Travel date"
-                                   value={travelDate}
-                                   onChangeText={text => setTravelDate(text)}
+                                         value={travelDate}
+                                         onChangeText={text => setTravelDate(text)}
                         />
                     </Pressable>
 
                     {showPicker && (
-                        <DateTimePicker testID={"travelDatePicker"} display = "default"
+                        <DateTimePicker testID={"travelDatePicker"} display="default"
                                         mode={pickerMode} value={pickerDate}
                                         minimumDate={new Date()} maximumDate={new Date('2024-12-31')}
                                         onChange={onChange}

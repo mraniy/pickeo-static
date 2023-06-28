@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
 
     window: {
         marginTop: 15,
-        marginBottom:0,
-        flexDirection : 'column',
+        marginBottom: 0,
+        flexDirection: 'column',
         backgroundColor: 'white',
         width: "97%"
 
     },
     message: {
-        color:"#3D3C3A",
+        color: "#3D3C3A",
         backgroundColor: 'white',
         padding: 20,
         fontSize: 15,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         marginVertical: 0
     },
     element: {
-        color:"#708090",
+        color: "#708090",
         backgroundColor: 'white',
         padding: 4,
         fontSize: 13,
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
         marginVertical: 4
     },
     boldElement: {
-        color:"#357b9c",
-        fontWeight:"700",
+        color: "#357b9c",
+        fontWeight: "700",
         backgroundColor: 'white',
         padding: 5,
         fontSize: 13,

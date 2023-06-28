@@ -2,10 +2,10 @@ import {Text, TouchableOpacity} from "react-native";
 import GlobalStyles from "../screens/styles/GlobalStyles";
 import {useNavigation} from "@react-navigation/core";
 
-const StyledLink = ({link,linkLabel,style}) => {
+const StyledLink = ({link, linkLabel, style}) => {
     let navigation = useNavigation();
     return (
-        <TouchableOpacity style = {style} onPress={() => navigation.navigate(link)}>
+        <TouchableOpacity style={style} onPress={() => navigation.navigate(link)}>
             <Text style={GlobalStyles.linkText}>{linkLabel}</Text>
         </TouchableOpacity>
     )

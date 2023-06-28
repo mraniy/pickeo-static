@@ -12,7 +12,7 @@ const OrdersWaiting = ({navigation}) => {
 
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <FlatList data={retrieveData([ 'WAITING_FOR_TRAVELER', 'WAITING_FOR_VALIDATION'])}
+            <FlatList data={retrieveData(['WAITING_FOR_TRAVELER', 'WAITING_FOR_VALIDATION'])}
                       renderItem={({item}) =>
                           <UnitOrderWaiting message={item.message}
                                             id={item.id}

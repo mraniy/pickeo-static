@@ -1,6 +1,7 @@
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {StyleSheet, TextInput} from "react-native";
 import GlobalStyles from "../screens/styles/GlobalStyles";
 import React from "react";
+
 const StyledTextInput = ({placeholder, value, onChangeText, secure, multiline}) => {
 
     return (
@@ -9,14 +10,14 @@ const StyledTextInput = ({placeholder, value, onChangeText, secure, multiline}) 
             value={value}
             onChangeText={onChangeText}
             secureTextEntry={secure}
-            style={multiline? styles.textArea : GlobalStyles.input}
+            style={multiline ? styles.textArea : GlobalStyles.input}
         />
 
     )
 }
 export default StyledTextInput
 
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     textArea: {
         paddingHorizontal: 9,
         paddingVertical: 9,
@@ -24,7 +25,7 @@ const styles= StyleSheet.create({
         borderWidth: 0.5,
         borderRadius: 6,
         width: '100%',
-        height:200,
+        height: 200,
         textAlignVertical: 'top'
     }
 })

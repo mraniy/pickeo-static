@@ -22,6 +22,7 @@ export default function App() {
 
     //let Drawer = createDrawerNavigator();
     const Tab = createBottomTabNavigator();
+
     function StackNavigator() {
         return (<Stack.Navigator>
             <Stack.Screen name="Home"
@@ -52,6 +53,7 @@ export default function App() {
 
         </Stack.Navigator>)
     }
+
     //Dont delete try these active tint color 9c3560 e32977 f15c20
     //inactive tint color  40828c 40678c 174092
     function TabNavigator() {
@@ -137,7 +139,7 @@ const styles = StyleSheet.create({
     headerLinkStyle: {
         fontSize: 14,
         fontWeight: '600',
-        color : '#2584cc'
+        color: '#2584cc'
     },
 });
 

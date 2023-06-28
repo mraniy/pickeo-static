@@ -1,4 +1,4 @@
-import {StyleSheet, Image, View, default as Alert} from "react-native";
+import {Image, StyleSheet, View} from "react-native";
 import React from "react";
 
 //let imagePath='';
@@ -17,7 +17,7 @@ const LineSeparator = (imageName) => {
 
 export default LineSeparator
 
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     stretch: {
         width: "90%",
         height: 2,

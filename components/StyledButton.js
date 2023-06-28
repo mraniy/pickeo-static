@@ -1,6 +1,7 @@
-import {Text, TouchableOpacity, View} from "react-native";
+import {Text, TouchableOpacity} from "react-native";
 import GlobalStyles from "../screens/styles/GlobalStyles";
 import {useNavigation} from "@react-navigation/core";
+
 const StyledButton = ({buttonLink, buttonLabel}) => {
     let navigation = useNavigation();
     return (

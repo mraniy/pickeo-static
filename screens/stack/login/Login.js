@@ -1,4 +1,4 @@
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 import StyledButton from "../../../components/StyledButton";
@@ -24,9 +24,9 @@ const Login = ({navigation}) => {
                                  value={password}
                                  onChangeText={text => setPassword(text)}
                                  secure={true}
-                                 />
+                />
             </View>
-            <View style = {GlobalStyles.viewRowContainer}>
+            <View style={GlobalStyles.viewRowContainer}>
                 <StyledButton buttonLink={"Home"} buttonLabel={"Login"}/>
                 <StyledLink link={"SignUp"} linkLabel={"Sign up"} style={GlobalStyles.centeredLinkContainer}/>
             </View>

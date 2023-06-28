@@ -1,6 +1,6 @@
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
-import GlobalStyles from "../screens/styles/GlobalStyles";
+import {StyleSheet, TextInput} from "react-native";
 import React from "react";
+
 const StyledDateInput = ({placeholder, value, onChangeText}) => {
 
     return (
@@ -16,7 +16,7 @@ const StyledDateInput = ({placeholder, value, onChangeText}) => {
 }
 export default StyledDateInput
 
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     dateInput: {
         paddingHorizontal: 9,
         paddingVertical: 9,
