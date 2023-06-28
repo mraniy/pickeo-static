@@ -36,9 +36,8 @@ export default function App() {
                                   </TouchableOpacity>
                               )
                           })}/>
-            <Stack.Screen name="NewProductRequests"
-                          component={NewOrder}/>
-            <Stack.Screen name="ProductRequests"
+
+            <Stack.Screen name="OrdersWaiting"
                           component={OrdersWaiting}/>
             <Stack.Screen name="Login"
                           component={Login}/>

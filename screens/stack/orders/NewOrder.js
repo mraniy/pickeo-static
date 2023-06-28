@@ -37,7 +37,7 @@ const NewOrder = ({navigation}) => {
 
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
-                    <StyledButton buttonLink={"ProductRequests"} buttonLabel={"Submit"}/>
+                    <StyledButton buttonLink={"OrdersWaiting"} buttonLabel={"Submit"}/>
                 </View>
             </View>
         </ScrollView>

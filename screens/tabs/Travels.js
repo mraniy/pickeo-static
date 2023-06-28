@@ -66,7 +66,7 @@ const Travels = ({navigation}) => {
 
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
-                    <StyledButton buttonLink={"ProductRequests"} buttonLabel={"Add Travel"}/>
+                    <StyledButton buttonLink={"OrdersWaiting"} buttonLabel={"Add Travel"}/>
                 </View>
             </View>
         </ScrollView>
