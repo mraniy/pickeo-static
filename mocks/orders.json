@@ -47,7 +47,7 @@
   {
     "id": 6,
     "userId": 1,
-    "message": "order 6",
+    "message": "order 8 blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla",
     "totalPrice": 140,
     "status": "WAITING_FOR_VALIDATION",
     "expectedDeliveryDate": null,
@@ -74,16 +74,16 @@
   {
     "id": 9,
     "userId": 1,
-    "message": "order 7",
+    "message": "order 9",
     "totalPrice": 120,
     "status": "WAITING_FOR_PAYMENT",
     "expectedDeliveryDate": "2023-08-15",
     "deliveryDate": null
-    },
+  },
   {
     "id": 10,
     "userId": 1,
-    "message": "order 8 blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla",
+    "message": "order 10 blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla",
     "totalPrice": 170,
     "status": "WAITING_FOR_PAYMENT",
     "expectedDeliveryDate": "2023-08-06",
