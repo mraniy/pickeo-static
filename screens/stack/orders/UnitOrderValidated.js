@@ -9,7 +9,7 @@ const UnitOrderValidated = ({message, totalPrice, status, expectedDeliveryDate, 
             <LineSeparator imageName={'grey-line.png'}/>
             <Text style={styles.boldElement}>{totalPrice}</Text>
             <Text style={styles.element}>{status}</Text>
-            {expectedDeliveryDate && (
+            {expectedDeliveryDate && !deliveryDate && (
                 <Text style={styles.element}>{expectedDeliveryDate}</Text>
             )}
             {deliveryDate && (
