@@ -69,7 +69,7 @@ const GlobalStyles = StyleSheet.create({
         borderRadius: 9,
         padding: 20,
         paddingTop: 6,
-        margin: 20
+        margin: 10
 
     },
     formControl: {
