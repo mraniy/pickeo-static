@@ -1,4 +1,4 @@
-import {View} from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 import StyledButton from "../../../components/StyledButton";
@@ -34,5 +34,6 @@ const Login = ({navigation}) => {
 
     )
 }
+
 
 export default Login

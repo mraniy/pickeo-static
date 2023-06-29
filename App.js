@@ -16,6 +16,7 @@ import OrdersWaiting from "./screens/stack/orders/OrdersWaiting";
 import ProfileConfirm from "./screens/stack/profile/ProfileConfirm";
 import Travels from "./screens/tabs/Travels";
 import NextTravels from "./screens/stack/travels/NextTravels";
+import ChangePassword from "./screens/stack/profile/ChangePassword";
 
 export default function App() {
 
@@ -53,6 +54,9 @@ export default function App() {
 
             <Stack.Screen name="NextTravels"
                           component={NextTravels}/>
+
+            <Stack.Screen name="ChangePassword"
+                          component={ChangePassword}/>
 
         </Stack.Navigator>)
     }
