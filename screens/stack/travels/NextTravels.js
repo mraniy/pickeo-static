@@ -1,5 +1,5 @@
 import {FlatList, StyleSheet, View} from "react-native";
-import UnitNextTravell from "./UnitNextTravell";
+import UnitNextTravel from "./UnitNextTravel";
 import React from "react";
 
 
@@ -15,7 +15,7 @@ const NextTravels = ({navigation}) => {
         <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
             <FlatList data={retrieveData(['NEXT'])}
                       renderItem={({item}) =>
-                          <UnitNextTravell fromCity={item.fromCity}
+                          <UnitNextTravel fromCity={item.fromCity}
                                           id={item.id}
                                           toCity={item.toCity}
                                           travelDate={item.travelDate}

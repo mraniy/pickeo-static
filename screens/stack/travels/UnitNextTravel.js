@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import LineSeparator from "../../../components/LineSeparator";
 import React from "react";
 
-const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
+const UnitNextTravel = ({fromCity, toCity, travelDate}) => {
     return (
         <View style={styles.window}>
             <Text style={styles.route}>{fromCity + '  -->  ' +toCity}</Text>
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default UnitPastTravel
+export default UnitNextTravel
