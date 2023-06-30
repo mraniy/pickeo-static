@@ -24,7 +24,6 @@ const ChangePassword = ({navigation}) => {
                         secure={true}
                     />
                 </View>
-                <LineSeparator imageName={'grey-line.png'}/>
                 <View style={GlobalStyles.formControl}>
                     <StyledLabel labelText={"New Password"}/>
                     <StyledTextInput
@@ -45,6 +44,7 @@ const ChangePassword = ({navigation}) => {
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
                     <StyledButton buttonLink={"Profile"} buttonLabel={"Change"}/>
+                    <StyledLabel labelText={"     "}/>
                     <StyledButton buttonLink={"Profile"} buttonLabel={"Cancel"}/>
                 </View>
             </View>

@@ -28,7 +28,8 @@ const Login = ({navigation}) => {
             </View>
             <View style={GlobalStyles.viewRowContainer}>
                 <StyledButton buttonLink={"Home"} buttonLabel={"Login"}/>
-                <StyledLink link={"SignUp"} linkLabel={"Sign up"} style={GlobalStyles.centeredLinkContainer}/>
+                <StyledLink link={"SignUp"} linkLabel={"  ->  Sign up"} style={GlobalStyles.centeredLinkContainer}/>
+
             </View>
         </View>
 

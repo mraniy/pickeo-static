@@ -12,14 +12,15 @@ const GlobalStyles = StyleSheet.create({
 
     },
 
+    //dont delete height 60% width 40%
     buttonContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
         paddingVertical: 12,
         backgroundColor: 'lightblue',
         marginTop: 30,
-        height: "60%",
-        width: '40%',
+        height: 50,
+        width: 140,
         alignItems: 'center'
     },
 
@@ -47,7 +48,6 @@ const GlobalStyles = StyleSheet.create({
         width: '40%',
         alignItems: 'center'
     },
-
 
     linkText: {
         fontSize: 16,

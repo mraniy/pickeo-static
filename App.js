@@ -5,7 +5,6 @@ import Home from "./screens/tabs/Home";
 import {FontAwesome, Ionicons} from "@expo/vector-icons";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Orders from "./screens/tabs/Orders";
-import NewTravel from "./screens/stack/travels/NewTravel";
 import Earnings from "./screens/tabs/Earnings";
 import Profile from "./screens/tabs/Profile";
 import React from "react";
@@ -63,11 +62,15 @@ export default function App() {
 
     //Dont delete try these active tint color 9c3560 e32977 f15c20
     //inactive tint color  40828c 40678c 174092
+    //background  F5F5F5 F9F6EE active ECF3F9
     function TabNavigator() {
         return (<Tab.Navigator
+
             tabBarOptions={{
                 activeTintColor: '#f15c20', inactiveTintColor: '#40678c',
-                labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2}
+                labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
+                activeBackgroundColor: '#ECF3F9',
+                inactiveBackgroundColor: 'white'
             }}
         >
             <Tab.Screen name="HomeScreenTab"

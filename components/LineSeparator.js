@@ -21,6 +21,6 @@ const styles = StyleSheet.create({
     stretch: {
         width: "90%",
         height: 2,
-        resizeMode: 'cover',
+        resizeMode: 'cover'
     },
 })

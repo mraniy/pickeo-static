@@ -1,4 +1,4 @@
-import {ScrollView, View} from "react-native";
+import {ScrollView, Text, View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../styles/GlobalStyles";
 import StyledButton from "../../components/StyledButton";
@@ -34,8 +34,8 @@ const Profile = ({navigation}) => {
                                      onChangeText={text => setPhone(text)}/>
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
-                    <StyledButton buttonLink={"ProfileConfirm"} buttonLabel={"Validate"}/>
-                    <StyledLink link={"ChangePassword"} linkLabel={"Change password"} style={GlobalStyles.centeredLinkContainer}/>
+                    <StyledButton buttonLink={"ProfileConfirm"} buttonLabel={"Save"}/>
+                    <StyledLink link={"ChangePassword"} linkLabel={"-> Change password"} style={GlobalStyles.centeredLinkContainer}/>
                 </View>
             </View>
         </ScrollView>
