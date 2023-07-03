@@ -10,10 +10,14 @@ const UnitOrderValidated = ({message, totalPrice, status, expectedDeliveryDate, 
             <Text style={styles.boldElement}>{totalPrice}</Text>
             <Text style={styles.element}>{status}</Text>
             {expectedDeliveryDate && !deliveryDate && (
-                <Text style={styles.element}>{expectedDeliveryDate}</Text>
+                <Text style={styles.element}>Expected delivery date&nbsp;&nbsp;
+                    <Text style={styles.dateElement}>{expectedDeliveryDate}</Text>
+                </Text>
             )}
             {deliveryDate && (
-                <Text style={styles.element}>{deliveryDate}</Text>
+                <Text style={styles.element}>Delivered on&nbsp;&nbsp;
+                    <Text style={styles.dateElement}>{deliveryDate}</Text>
+                </Text>
             )}
 
         </View>
@@ -40,6 +44,14 @@ const styles = StyleSheet.create({
     },
     element: {
         color: "#708090",
+        backgroundColor: 'white',
+        padding: 4,
+        fontSize: 13,
+        marginHorizontal: 20,
+        marginVertical: 4
+    },
+    dateElement: {
+        color: "#141e83",
         backgroundColor: 'white',
         padding: 4,
         fontSize: 13,
