@@ -9,7 +9,7 @@ const LineSeparator = (imageName) => {
         <View style={styles.container}>
             <Image
                 style={styles.stretch}
-                source={require('../assets/separators/grey-line.png')}
+                source={require('../assets/images/separators/grey-line.png')}
             />
         </View>
     )
