@@ -61,7 +61,7 @@ export default function App() {
     }
 
     //Dont delete try these active tint color 9c3560 e32977 f15c20
-    //inactive tint color  40828c 40678c 174092
+    //inactive tint color  40828c 174092 40678c
     //background  F5F5F5 F9F6EE active ECF3F9
     function TabNavigator() {
         return (<Tab.Navigator

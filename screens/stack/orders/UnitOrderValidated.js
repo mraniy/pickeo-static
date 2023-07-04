@@ -7,7 +7,7 @@ const UnitOrderValidated = ({message, totalPrice, status, expectedDeliveryDate, 
         <View style={styles.window}>
             <Text style={styles.message}>{message}</Text>
             <LineSeparator imageName={'grey-line.png'}/>
-            <Text style={styles.boldElement}>{totalPrice}</Text>
+            <Text style={styles.boldElement}>{totalPrice}E</Text>
             <Text style={styles.element}>{status}</Text>
             {expectedDeliveryDate && !deliveryDate && (
                 <Text style={styles.element}>Expected delivery date&nbsp;&nbsp;

@@ -12,22 +12,23 @@ const GlobalStyles = StyleSheet.create({
 
     },
 
-    //dont delete height 60% width 40%
+    //dont delete height 60% width 40% 00578A 0f63DD
     buttonContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
         paddingVertical: 12,
-        backgroundColor: 'lightblue',
+        backgroundColor: '#1b6997',
         marginTop: 30,
         height: 50,
         width: 140,
         alignItems: 'center'
     },
 
+    //orig 0e535b - FFDEAD FFF5EE F5F5DC FFE5B4 FFF1D7
     btnText: {
         fontSize: 16,
         fontWeight: '600',
-        color: '#0e535b'
+        color: '#FFF1D7'
 
     },
 
@@ -49,10 +50,11 @@ const GlobalStyles = StyleSheet.create({
         alignItems: 'center'
     },
 
+    //orig 2584cc 5b971b
     linkText: {
         fontSize: 16,
         fontWeight: '800',
-        color: '#2584cc'
+        color: '#C34723'
     },
 
     input: {
@@ -76,6 +78,8 @@ const GlobalStyles = StyleSheet.create({
         width: '100%',
         flexDirection: 'column'
     },
+
+    //357b9c
     label: {
         marginVertical: 15,
         color: '#357b9c',

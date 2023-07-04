@@ -7,7 +7,7 @@ const UnitOrderWaiting = ({message, totalPrice, status}) => {
         <View style={styles.window}>
             <Text style={styles.message}>{message}</Text>
             <LineSeparator imageName={'grey-line.png'}/>
-            <Text style={styles.boldElement}>{totalPrice}</Text>
+            <Text style={styles.boldElement}>{totalPrice}E</Text>
             <Text style={styles.element}>{status}</Text>
         </View>
     )
