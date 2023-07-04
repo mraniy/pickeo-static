@@ -50,11 +50,11 @@ const GlobalStyles = StyleSheet.create({
         alignItems: 'center'
     },
 
-    //orig 2584cc 5b971b
+    //orig 2584cc marron C34723 vert 5b971b
     linkText: {
         fontSize: 16,
         fontWeight: '800',
-        color: '#C34723'
+        color: '#5b971b'
     },
 
     input: {
