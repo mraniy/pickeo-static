@@ -16,7 +16,7 @@ const NewOrder = ({navigation}) => {
             <View style={GlobalStyles.formContainer}>
                 <View style={GlobalStyles.formControl}>
                     <StyledLabel labelText={"Message"}/>
-                    <StyledTextInput placeholder=""
+                    <StyledTextInput placeholder="Message"
                                      value={message}
                                      multiline={true}
                                      onChangeText={text => setMessage(text)
@@ -25,14 +25,16 @@ const NewOrder = ({navigation}) => {
                 </View>
                 <View style={GlobalStyles.formControl}>
                     <StyledLabel labelText={"Price"}/>
-                    <NumericTextInput value={price}
+                    <NumericTextInput placeholder="Price"
+                                      value={price}
                                       onChangeText={text => setPrice(text)}/>
 
                 </View>
 
                 <View style={GlobalStyles.formControl}>
                     <StyledLabel labelText={"Traveler Fee"}/>
-                    <NumericTextInput value={travelerFee}
+                    <NumericTextInput placeholder="Fee"
+                                      value={travelerFee}
                                       onChangeText={text => setTravelerFee(text)}/>
 
                 </View>
