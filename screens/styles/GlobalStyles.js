@@ -24,7 +24,7 @@ const GlobalStyles = StyleSheet.create({
         alignItems: 'center'
     },
 
-    //orig 0e535b - FFDEAD FFF5EE F5F5DC FFE5B4 FFF1D7
+    //orig 0e535b - FFDEAD FFF5EE F5F5DC FFE5B4 FFF1D7 try c9ee00
     btnText: {
         fontSize: 16,
         fontWeight: '600',
