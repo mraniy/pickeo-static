@@ -60,15 +60,11 @@ export default function App() {
         </Stack.Navigator>)
     }
 
-    //Dont delete try these active tint color orig F15C20
-    //inactive tint color orig 40678C
-    //active back ground color orig ECF3F9
-
     function TabNavigator() {
         return (<Tab.Navigator
 
             tabBarOptions={{
-                activeTintColor: '#c9ee00', inactiveTintColor: '#E3DAC9',
+                activeTintColor: '#F3CA20', inactiveTintColor: '#E3DAC9',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
                 activeBackgroundColor: '#231F20',
                 inactiveBackgroundColor: 'black'
@@ -153,5 +149,3 @@ const styles = StyleSheet.create({
         color: '#2584cc'
     },
 });
-
-

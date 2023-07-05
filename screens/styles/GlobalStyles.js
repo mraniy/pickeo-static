@@ -24,7 +24,7 @@ const GlobalStyles = StyleSheet.create({
         alignItems: 'center'
     },
 
-    //orig 0e535b - FFDEAD FFF5EE F5F5DC FFE5B4 FFF1D7 try c9ee00
+    //try c9ee00
     btnText: {
         fontSize: 16,
         fontWeight: '600',
@@ -50,11 +50,11 @@ const GlobalStyles = StyleSheet.create({
         alignItems: 'center'
     },
 
-    //orig 2584cc marron C34723 vert 5b971b
+    //orig 2584cc bleu  1E847F vert 5b971b
     linkText: {
         fontSize: 16,
         fontWeight: '800',
-        color: '#5b971b'
+        color: '#1E847F'
     },
 
     input: {
