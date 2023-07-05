@@ -65,10 +65,10 @@ export default function App() {
         return (<Tab.Navigator
 
             tabBarOptions={{
-                activeTintColor: '#F3CA20', inactiveTintColor: '#E3DAC9',
+                activeTintColor: '#F15C20', inactiveTintColor: '#40678C',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
-                activeBackgroundColor: '#382D03',
-                inactiveBackgroundColor: 'black'
+                activeBackgroundColor: '#ECF3F9',
+                inactiveBackgroundColor: 'white'
             }}
         >
             <Tab.Screen name="HomeScreenTab"
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
 
     navIconStyle: {
         fontSize: 25,
-        color: '#1b6997',
+        color: 'grey',
         paddingTop: 6
     },
 
