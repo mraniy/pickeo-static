@@ -61,12 +61,13 @@ export default function App() {
     }
 
     function TabNavigator() {
+        //231F20 old inactive background
         return (<Tab.Navigator
 
             tabBarOptions={{
                 activeTintColor: '#F3CA20', inactiveTintColor: '#E3DAC9',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
-                activeBackgroundColor: '#231F20',
+                activeBackgroundColor: '#382D03',
                 inactiveBackgroundColor: 'black'
             }}
         >
