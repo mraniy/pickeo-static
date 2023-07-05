@@ -60,17 +60,18 @@ export default function App() {
         </Stack.Navigator>)
     }
 
-    //Dont delete try these active tint color 9c3560 e32977 f15c20
-    //inactive tint color  40828c 174092 40678c
-    //background  F5F5F5 F9F6EE active ECF3F9
+    //Dont delete try these active tint color orig F15C20
+    //inactive tint color orig 40678C
+    //active back ground color orig ECF3F9
+
     function TabNavigator() {
         return (<Tab.Navigator
 
             tabBarOptions={{
-                activeTintColor: '#f15c20', inactiveTintColor: '#40678c',
+                activeTintColor: '#c9ee00', inactiveTintColor: '#E3DAC9',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
-                activeBackgroundColor: '#ECF3F9',
-                inactiveBackgroundColor: 'white'
+                activeBackgroundColor: '#231F20',
+                inactiveBackgroundColor: 'black'
             }}
         >
             <Tab.Screen name="HomeScreenTab"
@@ -134,7 +135,7 @@ const styles = StyleSheet.create({
 
     navIconStyle: {
         fontSize: 25,
-        color: 'gray',
+        color: '#1b6997',
         paddingTop: 6
     },
 
