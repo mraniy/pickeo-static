@@ -18,6 +18,7 @@ const OrdersWaiting = ({navigation}) => {
                                             id={item.id}
                                             totalPrice={item.totalPrice}
                                             status={item.status}
+                                            offersCount={item.offersCount}
                           />
                       }>
 

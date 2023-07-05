@@ -12,7 +12,7 @@ const OrdersWaiting = ({navigation}) => {
 
     return (
         <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
-            <FlatList data={retrieveData(['WAITING_FOR_PAYMENT', 'WAITING_FOR_DELIVERY', 'DELIVERED'])}
+            <FlatList data={retrieveData(['WAITING_FOR_DELIVERY', 'DELIVERED'])}
                       renderItem={({item}) =>
                           <UnitOrderValidated message={item.message}
                                               id={item.id}

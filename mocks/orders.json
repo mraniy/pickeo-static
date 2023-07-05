@@ -6,7 +6,8 @@
     "totalPrice": 200,
     "status": "WAITING_FOR_DELIVERY",
     "expectedDeliveryDate": "2023-06-25",
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 0
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "totalPrice": 100,
     "status": "WAITING_FOR_VALIDATION",
     "expectedDeliveryDate": null,
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 0
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "totalPrice": 150,
     "status": "WAITING_FOR_TRAVELER",
     "expectedDeliveryDate": null,
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 4
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "totalPrice": 250,
     "status": "DELIVERED",
     "expectedDeliveryDate": "2023-06-20",
-    "deliveryDate": "2023-06-25"
+    "deliveryDate": "2023-06-25",
+    "offersCount": 0
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "totalPrice": 230,
     "status": "WAITING_FOR_DELIVERY",
     "expectedDeliveryDate": "2023-07-25",
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 0
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "totalPrice": 140,
     "status": "WAITING_FOR_VALIDATION",
     "expectedDeliveryDate": null,
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 0
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "totalPrice": 230,
     "status": "WAITING_FOR_TRAVELER",
     "expectedDeliveryDate": null,
-    "deliveryDate": null
+    "deliveryDate": null,
+    "offersCount": 2
   },
   {
     "id": 8,
@@ -69,24 +76,27 @@
     "totalPrice": 210,
     "status": "DELIVERED",
     "expectedDeliveryDate": "2023-08-25",
-    "deliveryDate": "2023-08-27"
+    "deliveryDate": "2023-08-27",
+    "offersCount": 0
   },
   {
     "id": 9,
     "userId": 1,
     "message": "order 9",
     "totalPrice": 120,
-    "status": "WAITING_FOR_PAYMENT",
-    "expectedDeliveryDate": "2023-08-15",
-    "deliveryDate": null
+    "status": "WAITING_FOR_TRAVELER",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null,
+    "offersCount": 0
   },
   {
     "id": 10,
     "userId": 1,
     "message": "order 10 blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla",
     "totalPrice": 170,
-    "status": "WAITING_FOR_PAYMENT",
-    "expectedDeliveryDate": "2023-08-06",
-    "deliveryDate": null
+    "status": "WAITING_FOR_TRAVELER",
+    "expectedDeliveryDate": null,
+    "deliveryDate": null,
+    "offersCount": 0
   }
 ]

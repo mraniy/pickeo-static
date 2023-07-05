@@ -5,7 +5,9 @@
     "fromCity": "Paris",
     "toCity": "Casablanca",
     "travelDate": "2023-07-29",
-    "status": "NEXT"
+    "status": "NEXT",
+    "waitingOrdersCount": 6,
+    "confirmedOrdersCount": 3
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "fromCity": "Casablanca",
     "toCity": "Paris",
     "travelDate": "2023-08-15",
-    "status": "NEXT"
+    "status": "NEXT",
+    "waitingOrdersCount": 3,
+    "confirmedOrdersCount": 0
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "fromCity": "Rabat",
     "toCity": "Lyon",
     "travelDate": "2023-09-01",
-    "status": "NEXT"
+    "status": "NEXT",
+    "waitingOrdersCount": 0,
+    "confirmedOrdersCount": 0
   },
   {
     "id": 4,
@@ -29,6 +35,16 @@
     "fromCity": "Agadir",
     "toCity": "Paris",
     "travelDate": "2023-04-12",
-    "status": "PAST"
+    "status": "PAST",
+    "confirmedOrdersCount": 3
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "fromCity": "Agadir",
+    "toCity": "Paris",
+    "travelDate": "2023-03-05",
+    "status": "PAST",
+    "confirmedOrdersCount": 0
   }
 ]
