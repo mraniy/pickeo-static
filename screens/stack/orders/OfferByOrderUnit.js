@@ -1,22 +1,15 @@
 import {StyleSheet, Text, View} from 'react-native';
 import LineSeparator from "../../../components/LineSeparator";
 import React from "react";
-import StyledLink from "../../../components/StyledLink";
 
-const UnitOrderWaiting = ({message, totalPrice, status,offersCount}) => {
+const OfferByOrderUnit = ({fee, date,traveler}) => {
     return (
         <View style={styles.window}>
-            <Text style={styles.message}>{message}</Text>
-            <LineSeparator imageName={'grey-line.png'}/>
-            <Text style={styles.boldElement}>{totalPrice}E</Text>
-            <Text style={styles.element}>{status}</Text>
-            {offersCount !==0 && (
-                <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={styles.linkContainer}/>
-            )}
-            {offersCount ===0 && status === 'WAITING_FOR_TRAVELER' && (
-                <Text style={styles.element}>No offers yet</Text>
-            )}
 
+            <Text style={styles.boldElement}>{fee}</Text>
+            <Text style={styles.element}>{date}</Text>
+            <Text style={styles.element}>{traveler.firstName}</Text>
+            <LineSeparator imageName={'grey-line.png'}/>
         </View>
     )
 };
@@ -67,4 +60,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default UnitOrderWaiting
+export default OfferByOrderUnit
