@@ -2,6 +2,7 @@ import {StyleSheet} from "react-native";
 
 const GlobalStyles = StyleSheet.create({
 
+    ////////////////////////////////////////////Direction des Flex////////////////////////////////////////////////////
     viewRowContainer: {
         flexDirection: 'row',
 
@@ -12,6 +13,47 @@ const GlobalStyles = StyleSheet.create({
 
     },
 
+    //////////////////////////////////////LA PETITRE FENTETRE DANS LES LISTES////////////////////////////////////////
+    window: {
+        marginTop: 12,
+        marginBottom: 0,
+        flexDirection: 'column',
+        backgroundColor: 'white',
+        width: "97%"
+    },
+
+////////////////////////////////////////////////FORMULAIRES///////////////////////////////////////////////////////////
+    /////////STYLE DES FORMULAIRES///////
+    formContainer: {
+        backgroundColor: 'white',
+        borderRadius: 9,
+        padding: 20,
+        paddingTop: 6,
+        margin: 10
+     /////////STYLE DES CONTROLES///////
+    },
+    formControl: {
+        width: '100%',
+        flexDirection: 'column'
+    },
+
+    ////////CHAMPS DE TEXTE/////////////
+    //357b9c
+    label: {
+        marginVertical: 15,
+        color: '#357b9c',
+        fontWeight: 'bold'
+    },
+    input: {
+        paddingHorizontal: 9,
+        paddingVertical: 9,
+        borderColor: 'black',
+        borderWidth: 0.5,
+        borderRadius: 6,
+        width: '100%'
+    },
+
+    /////////////////////////////////////////////BOUTTONS/////////////////////////////////////////////////////////////
     //dont delete height 60% width 40% 00578A 0f63DD
     buttonContainer: {
         borderRadius: 6,
@@ -32,16 +74,8 @@ const GlobalStyles = StyleSheet.create({
 
     },
 
+    /////////////////////////////////////////////LIENS/////////////////////////////////////////////////////////////
     linkContainer: {
-        borderRadius: 6,
-        paddingHorizontal: 9,
-        paddingVertical: 25,
-        marginTop: 20,
-        width: '40%',
-        alignItems: 'center'
-    },
-
-    centeredLinkContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
         paddingVertical: 23,
@@ -57,37 +91,5 @@ const GlobalStyles = StyleSheet.create({
         color: '#1E847F'
     },
 
-    input: {
-        paddingHorizontal: 9,
-        paddingVertical: 9,
-        borderColor: 'black',
-        borderWidth: 0.5,
-        borderRadius: 6,
-        width: '100%'
-    },
-
-    formContainer: {
-        backgroundColor: 'white',
-        borderRadius: 9,
-        padding: 20,
-        paddingTop: 6,
-        margin: 10
-
-    },
-    formControl: {
-        width: '100%',
-        flexDirection: 'column'
-    },
-
-    //357b9c
-    label: {
-        marginVertical: 15,
-        color: '#357b9c',
-        fontWeight: 'bold'
-    },
-
-    message: {
-        paddingTop: 10
-    },
 })
 export default GlobalStyles

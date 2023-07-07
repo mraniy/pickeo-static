@@ -1,0 +1,30 @@
+{
+  "id": 6,
+  "fromCity": "Paris",
+  "toCity": "Casablanca",
+  "travelDate": "2023-07-29",
+  "matchingOrders": [
+    {
+      "id": 2,
+      "title": "annonce 1",
+      "productPrice": 100,
+      "fee": 30,
+      "shopper": {
+        "id": 8,
+        "firstName": "first name 8",
+        "lastName": "last name 8"
+      }
+    },
+    {
+      "id": 6,
+      "title": "annonce 2",
+      "productPrice": 80,
+      "fee": 25,
+      "shopper": {
+        "id": 9,
+        "firstName": "first name 9",
+        "lastName": "last name 9"
+      }
+    }
+  ]
+}

@@ -35,7 +35,7 @@ const Profile = ({navigation}) => {
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
                     <StyledButton buttonLink={"ProfileConfirm"} buttonLabel={"Save"}/>
-                    <StyledLink link={"ChangePassword"} linkLabel={"-> Change password"} style={GlobalStyles.centeredLinkContainer}/>
+                    <StyledLink link={"ChangePassword"} linkLabel={"-> Change password"} style={GlobalStyles.linkContainer}/>
                 </View>
             </View>
         </ScrollView>

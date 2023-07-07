@@ -1,6 +1,6 @@
 import {FlatList, StyleSheet, Text, View} from "react-native";
 import React from "react";
-import OfferByOrderUnit from "./OfferByOrderUnit";
+import UnitOfferByOrder from "./UnitOfferByOrder";
 
 const OffersByOrder = ({navigation}) => {
     const data = require('../../../mocks/offersByOrder');
@@ -12,7 +12,7 @@ const OffersByOrder = ({navigation}) => {
             <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
                 <FlatList data={data.offers}
                           renderItem={({item}) =>
-                              <OfferByOrderUnit fee = {item.fee}
+                              <UnitOfferByOrder fee = {item.fee}
                                                 date = {item.date}
                                                 traveler = {item.traveler}
                               />

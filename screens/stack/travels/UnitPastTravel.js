@@ -1,10 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import LineSeparator from "../../../components/LineSeparator";
 import React from "react";
+import GlobalStyles from "../../styles/GlobalStyles";
 
 const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
     return (
-        <View style={styles.window}>
+        <View style={GlobalStyles.window}>
             <Text style={styles.route}>{fromCity + '  -->  ' +toCity}</Text>
             <Text style={styles.routeDate}>{'' +travelDate}</Text>
         </View>
@@ -13,14 +14,6 @@ const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
 
 const styles = StyleSheet.create({
 
-    window: {
-        marginTop: 12,
-        marginBottom: 0,
-        flexDirection: 'column',
-        backgroundColor: 'white',
-        width: "97%"
-
-    },
     //16161D
     route: {
         color: "#16161D",

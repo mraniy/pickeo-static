@@ -17,6 +17,7 @@ import Travels from "./screens/tabs/Travels";
 import NextTravels from "./screens/stack/travels/NextTravels";
 import ChangePassword from "./screens/stack/profile/ChangePassword";
 import OffersByOrder from "./screens/stack/orders/OffersByOrder";
+import MatchingOrdersByTravel from "./screens/stack/travels/MatchingOrdersByTravel";
 
 export default function App() {
 
@@ -56,6 +57,9 @@ export default function App() {
 
             <Stack.Screen name="NextTravels"
                           component={NextTravels}/>
+
+            <Stack.Screen name="MatchingOrdersByTravel"
+                          component={ChangePassword}/>
 
             <Stack.Screen name="ChangePassword"
                           component={ChangePassword}/>

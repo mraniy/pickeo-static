@@ -6,6 +6,7 @@
     "toCity": "Casablanca",
     "travelDate": "2023-07-29",
     "status": "NEXT",
+    "matchingOrdersCount": 10,
     "waitingOrdersCount": 6,
     "confirmedOrdersCount": 3
   },
@@ -16,7 +17,8 @@
     "toCity": "Paris",
     "travelDate": "2023-08-15",
     "status": "NEXT",
-    "waitingOrdersCount": 3,
+    "matchingOrdersCount": 10,
+    "waitingOrdersCount": 8,
     "confirmedOrdersCount": 0
   },
   {
@@ -26,6 +28,7 @@
     "toCity": "Lyon",
     "travelDate": "2023-09-01",
     "status": "NEXT",
+    "matchingOrdersCount": 25,
     "waitingOrdersCount": 0,
     "confirmedOrdersCount": 0
   },

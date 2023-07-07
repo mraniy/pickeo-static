@@ -12,7 +12,7 @@ function MyTabs() {
         <Tab.Navigator>
             <Tab.Screen name="New" component={NewOrder}/>
             <Tab.Screen name="Waiting" component={OrdersWaiting}/>
-            <Tab.Screen name="Validated" component={OrdersValidated}/>
+            <Tab.Screen name="Confirmed" component={OrdersValidated}/>
         </Tab.Navigator>
     );
 }

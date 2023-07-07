@@ -1,10 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import LineSeparator from "../../../components/LineSeparator";
 import React from "react";
+import GlobalStyles from "../../styles/GlobalStyles";
 
-const OfferByOrderUnit = ({fee, date,traveler}) => {
+const UnitOfferByOrder = ({fee, date,traveler}) => {
     return (
-        <View style={styles.window}>
+        <View style={GlobalStyles.window}>
 
             <Text style={styles.boldElement}>{fee}</Text>
             <Text style={styles.element}>{date}</Text>
@@ -16,22 +17,6 @@ const OfferByOrderUnit = ({fee, date,traveler}) => {
 
 const styles = StyleSheet.create({
 
-    window: {
-        marginTop: 15,
-        marginBottom: 0,
-        flexDirection: 'column',
-        backgroundColor: 'white',
-        width: "97%"
-
-    },
-    message: {
-        color: "#3D3C3A",
-        backgroundColor: 'white',
-        padding: 20,
-        fontSize: 15,
-        marginHorizontal: 5,
-        marginVertical: 0
-    },
     element: {
         color: "#708090",
         backgroundColor: 'white',
@@ -60,4 +45,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default OfferByOrderUnit
+export default UnitOfferByOrder

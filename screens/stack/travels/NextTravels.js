@@ -19,6 +19,7 @@ const NextTravels = ({navigation}) => {
                                           id={item.id}
                                           toCity={item.toCity}
                                           travelDate={item.travelDate}
+                                          matchingOrdersCount={item.matchingOrdersCount}
                           />
                       }>
 
