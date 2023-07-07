@@ -38,8 +38,8 @@
   {
     "id": 5,
     "userId": 1,
-    "fromCity": "Agadir",
-    "toCity": "Paris",
+    "fromCity": "Agadir oufella",
+    "toCity": "Casablanca",
     "travelDate": "2023-03-05",
     "status": "PAST",
     "matchingOrdersCount": 2

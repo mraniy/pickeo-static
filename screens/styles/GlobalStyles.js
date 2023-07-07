@@ -49,7 +49,7 @@ const GlobalStyles = StyleSheet.create({
         paddingHorizontal: 9,
         paddingVertical: 23,
         marginTop: 20,
-        width: '40%',
+        width: '55%',
         alignItems: 'center'
     },
 
@@ -58,7 +58,7 @@ const GlobalStyles = StyleSheet.create({
         paddingHorizontal: 9,
         paddingVertical: 8,
         marginTop: 0,
-        width: '40%',
+        width: '80%',
         alignItems: 'flex-start'
     },
 
@@ -69,7 +69,7 @@ const GlobalStyles = StyleSheet.create({
         color: '#1E847F'
     },
     linkTextSmall: {
-        fontSize: 16,
+        fontSize: 15,
         fontWeight: '800',
         color: '#1E847F'
     },
@@ -153,6 +153,5 @@ const GlobalStyles = StyleSheet.create({
     },
 
 })
-
 
 export default GlobalStyles

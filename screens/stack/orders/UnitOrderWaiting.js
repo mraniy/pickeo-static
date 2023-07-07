@@ -14,7 +14,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
                 <Text style={GlobalStyles.textGreyed}>{status}</Text>
             )}
             {offersCount !==0 && (
-                <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer}/>
+                <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer} smallFont={true}/>
             )}
             {offersCount ===0 && status === 'WAITING_FOR_TRAVELER' && (
                 <Text style={GlobalStyles.textGreyed}>No offers yet</Text>

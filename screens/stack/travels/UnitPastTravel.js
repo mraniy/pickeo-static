@@ -9,20 +9,21 @@ const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
     return (
         <View style={  [GlobalStyles.window, {backgroundColor:"#FDFDFC"}]  }>
             <View style={GlobalStyles.viewRowContainer}>
-                <Text style={  [styles.route]  }>{fromCity}</Text>
+                <Text style={  [styles.route, {marginLeft:20}]  }>{fromCity}</Text>
                 <Ionicons name="airplane" style={[GlobalStyles.iconStyle, {width:"10%", color:"#0897B4"}]}/>
                 <Text style={styles.route}>{toCity}</Text>
             </View>
 
-            <View style={{marginVertical: 10}}>
+            <View style={{marginTop: 10, marginBottom:6}}>
                 <HorizontalLineSeparator/>
             </View>
 
             <View style={ {backgroundColor: "white"} }>
                 <View style={GlobalStyles.viewRowContainer}>
                     <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 10}]}>On</Text>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
                     <Text style={styles.routeDate}>{'' +travelDate}</Text>
+
                 </View>
 
             </View>
@@ -36,11 +37,10 @@ const styles = StyleSheet.create({
     //16161D
     route: {
         color: "#16161D",
-        fontSize: 15,
+        fontSize: 16
+        ,
         fontWeight: "600",
-        marginHorizontal: 20,
-        marginTop: 10,
-        width: 85
+        marginTop: 10
     },
     //357b9c 0047AB 00008B 357b9c
     routeDate: {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         fontWeight: "400",
         paddingVertical: 12,
         fontSize: 14,
-        marginHorizontal: 48,
+        marginHorizontal: 0,
         marginVertical: 0
     }
 });
