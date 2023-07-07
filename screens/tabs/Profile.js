@@ -4,7 +4,7 @@ import GlobalStyles from "../styles/GlobalStyles";
 import StyledButton from "../../components/StyledButton";
 import StyledLabel from "../../components/StyledLabel";
 import StyledTextInput from "../../components/StyledTextInput";
-import StyledLinkBig from "../../components/StyledLinkBig";
+import StyledLink from "../../components/StyledLink";
 
 
 const Profile = ({navigation}) => {
@@ -35,7 +35,7 @@ const Profile = ({navigation}) => {
                 </View>
                 <View style={GlobalStyles.viewRowContainer}>
                     <StyledButton buttonLink={"ProfileConfirm"} buttonLabel={"Save"}/>
-                    <StyledLinkBig link={"ChangePassword"} linkLabel={"-> password"} style={GlobalStyles.centeredLinkContainer}/>
+                    <StyledLink link={"ChangePassword"} linkLabel={"-> password"} style={GlobalStyles.centeredLinkContainer}/>
                 </View>
             </View>
         </ScrollView>

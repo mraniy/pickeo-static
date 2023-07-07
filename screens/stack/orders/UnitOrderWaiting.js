@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React from "react";
-import StyledLinkSmall from "../../../components/StyledLinkSmall";
+import StyledLink from "../../../components/StyledLink";
 import GlobalStyles from "../../styles/GlobalStyles";
 
 const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
@@ -14,7 +14,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
                 <Text style={GlobalStyles.textGreyed}>{status}</Text>
             )}
             {offersCount !==0 && (
-                <StyledLinkSmall link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer}/>
+                <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer}/>
             )}
             {offersCount ===0 && status === 'WAITING_FOR_TRAVELER' && (
                 <Text style={GlobalStyles.textGreyed}>No offers yet</Text>

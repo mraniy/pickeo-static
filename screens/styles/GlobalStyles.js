@@ -78,7 +78,6 @@ const GlobalStyles = StyleSheet.create({
     ////////TEXTE BRUT
     textPlain: {
         color: "#3D3C3A",
-        backgroundColor: 'white',
         padding: 20,
         fontSize: 15,
         marginHorizontal: 5,
@@ -88,7 +87,6 @@ const GlobalStyles = StyleSheet.create({
     /////TEXTE SIMPLE
     textGreyed: {
         color: "#708090",
-        backgroundColor: 'white',
         padding: 4,
         fontSize: 13,
         marginHorizontal: 20,
@@ -99,7 +97,6 @@ const GlobalStyles = StyleSheet.create({
     textBold: {
         color: "#357b9c",
         fontWeight: "700",
-        backgroundColor: 'white',
         padding: 5,
         fontSize: 13,
         marginHorizontal: 20,
@@ -109,7 +106,6 @@ const GlobalStyles = StyleSheet.create({
     //////Les DATES
     textDate: {
         color: "#141e83",
-        backgroundColor: 'white',
         padding: 4,
         fontSize: 13,
         marginHorizontal: 20,
@@ -150,7 +146,7 @@ const GlobalStyles = StyleSheet.create({
 //////////////////////////////////////////////ICONES/////////////////////////////////////////////////////////////////
     iconStyle: {
         fontSize: 22,
-        color: '#ca5923',
+        color: '#dc543c',
         marginLeft : 20,
         paddingTop: 10,
 

@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 import StyledButton from "../../../components/StyledButton";
-import StyledLinkBig from "../../../components/StyledLinkBig";
+import StyledLink from "../../../components/StyledLink";
 import StyledLabel from "../../../components/StyledLabel";
 import StyledTextInput from "../../../components/StyledTextInput";
 
@@ -28,7 +28,7 @@ const Login = ({navigation}) => {
             </View>
             <View style={GlobalStyles.viewRowContainer}>
                 <StyledButton buttonLink={"Home"} buttonLabel={"Login"}/>
-                <StyledLinkBig link={"SignUp"} linkLabel={"  ->  Sign up"} style={GlobalStyles.centeredLinkContainer}/>
+                <StyledLink link={"SignUp"} linkLabel={"  ->  Sign up"} style={GlobalStyles.centeredLinkContainer}/>
 
             </View>
         </View>
