@@ -56,10 +56,10 @@ const GlobalStyles = StyleSheet.create({
     linkContainer: {
         borderRadius: 6,
         paddingHorizontal: 9,
-        paddingBottom: 8,
+        paddingVertical: 8,
         marginTop: 0,
         width: '40%',
-        alignItems: 'center'
+        alignItems: 'flex-start'
     },
 
     //orig 2584cc bleu  1E847F vert 5b971b
@@ -69,7 +69,7 @@ const GlobalStyles = StyleSheet.create({
         color: '#1E847F'
     },
     linkTextSmall: {
-        fontSize: 15,
+        fontSize: 16,
         fontWeight: '800',
         color: '#1E847F'
     },
@@ -145,9 +145,16 @@ const GlobalStyles = StyleSheet.create({
         borderWidth: 0.5,
         borderRadius: 6,
         width: '100%'
-    }
+    },
 
+//////////////////////////////////////////////ICONES/////////////////////////////////////////////////////////////////
+    iconStyle: {
+        fontSize: 22,
+        color: '#ca5923',
+        marginLeft : 20,
+        paddingTop: 10,
 
+    },
 
 })
 
