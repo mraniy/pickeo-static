@@ -7,7 +7,7 @@
     {
       "id": 2,
       "title": "annonce 1",
-      "productPrice": 100,
+      "price": 100,
       "fee": 30,
       "shopper": {
         "id": 8,
@@ -18,7 +18,7 @@
     {
       "id": 6,
       "title": "annonce 2",
-      "productPrice": 80,
+      "price": 80,
       "fee": 25,
       "shopper": {
         "id": 9,

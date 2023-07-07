@@ -59,7 +59,7 @@ export default function App() {
                           component={NextTravels}/>
 
             <Stack.Screen name="MatchingOrdersByTravel"
-                          component={ChangePassword}/>
+                          component={MatchingOrdersByTravel}/>
 
             <Stack.Screen name="ChangePassword"
                           component={ChangePassword}/>

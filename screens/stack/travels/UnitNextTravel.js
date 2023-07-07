@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import LineSeparator from "../../../components/LineSeparator";
 import React from "react";
-import StyledLink from "../../../components/StyledLink";
+import StyledLinkSmall from "../../../components/StyledLinkSmall";
 import GlobalStyles from "../../styles/GlobalStyles";
 
 const UnitNextTravel = ({fromCity, toCity, travelDate, matchingOrdersCount}) => {
@@ -10,10 +10,10 @@ const UnitNextTravel = ({fromCity, toCity, travelDate, matchingOrdersCount}) => 
             <Text style={styles.route}>{fromCity + '  -->  ' +toCity}</Text>
             <Text style={styles.routeDate}>{'' +travelDate}</Text>
             {matchingOrdersCount !==0 && (
-                <StyledLink link={"MatchingOrdersByTravel"} linkLabel={"-> " + matchingOrdersCount + " matching orders"} style={styles.linkContainer}/>
+                <StyledLinkSmall link={"MatchingOrdersByTravel"} linkLabel={"-> " + matchingOrdersCount + " orders"} style={GlobalStyles.linkContainer}/>
             )}
-            {matchingOrdersCount ===0 && status === 'WAITING_FOR_TRAVELER' && (
-                <Text style={styles.element}>No matching orders yet</Text>
+            {matchingOrdersCount ===0 && (
+                <Text style={GlobalStyles.textGreyed}>No matching orders yet</Text>
             )}
         </View>
     )
@@ -39,23 +39,8 @@ const styles = StyleSheet.create({
         fontSize: 14,
         marginHorizontal: 15,
         marginVertical: 0
-    },
-    linkContainer: {
-        borderRadius: 6,
-        paddingHorizontal: 9,
-        paddingVertical: 6,
-        marginTop: 4,
-        width: '40%',
-        alignItems: 'center'
-    },
-    element: {
-        color: "#708090",
-        backgroundColor: 'white',
-        padding: 4,
-        fontSize: 13,
-        marginHorizontal: 20,
-        marginVertical: 4
     }
+
 });
 
 export default UnitNextTravel
