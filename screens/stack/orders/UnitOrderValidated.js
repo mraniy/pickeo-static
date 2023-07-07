@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
-import LineSeparator from "../../../components/LineSeparator";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 
-const UnitOrderValidated = ({message, totalPrice, status, expectedDeliveryDate, deliveryDate}) => {
+const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, deliveryDate}) => {
     return (
         <View style={GlobalStyles.window}>
             <Text style={GlobalStyles.textPlain}>{message}</Text>
-            <LineSeparator imageName={'grey-line.png'}/>
-            <Text style={GlobalStyles.textBold}>{totalPrice}E</Text>
+            <HorizontalLineSeparator imageName={'grey-line.png'}/>
+            <Text style={GlobalStyles.textBold}>{price+fee}E</Text>
             <Text style={GlobalStyles.textGreyed}>{status}</Text>
             {expectedDeliveryDate && !deliveryDate && (
                 <Text style={GlobalStyles.textGreyed}>Expected delivery date&nbsp;&nbsp;

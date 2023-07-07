@@ -1,15 +1,15 @@
 import {StyleSheet, Text, View} from 'react-native';
-import LineSeparator from "../../../components/LineSeparator";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React from "react";
 import StyledLinkSmall from "../../../components/StyledLinkSmall";
 import GlobalStyles from "../../styles/GlobalStyles";
 
-const UnitOrderWaiting = ({message, totalPrice, status, offersCount}) => {
+const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
     return (
         <View style={GlobalStyles.window}>
             <Text style={GlobalStyles.textPlain}>{message}</Text>
-            <LineSeparator imageName={'grey-line.png'}/>
-            <Text style={GlobalStyles.textBold}>{totalPrice}E</Text>
+            <HorizontalLineSeparator imageName={'horizontal-grey-line.png'}/>
+            <Text style={GlobalStyles.textBold}>{price + fee}E</Text>
             {status ==="WAITING_FOR_VALIDATION" && (
                 <Text style={GlobalStyles.textGreyed}>{status}</Text>
             )}

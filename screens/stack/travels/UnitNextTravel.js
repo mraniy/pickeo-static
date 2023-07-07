@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import LineSeparator from "../../../components/LineSeparator";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React from "react";
 import StyledLinkSmall from "../../../components/StyledLinkSmall";
 import GlobalStyles from "../../styles/GlobalStyles";

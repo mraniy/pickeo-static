@@ -16,7 +16,8 @@ const OrdersWaiting = ({navigation}) => {
                       renderItem={({item}) =>
                           <UnitOrderWaiting message={item.message}
                                             id={item.id}
-                                            totalPrice={item.totalPrice}
+                                            price={item.price}
+                                            fee={item.fee}
                                             status={item.status}
                                             offersCount={item.offersCount}
                           />

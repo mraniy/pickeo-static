@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import LineSeparator from "../../../components/LineSeparator";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 
@@ -10,7 +10,7 @@ const UnitOfferByOrder = ({fee, date,traveler}) => {
             <Text style={GlobalStyles.textBold}>{fee}</Text>
             <Text style={GlobalStyles.textGreyed}>{date}</Text>
             <Text style={GlobalStyles.textGreyed}>{traveler.firstName}</Text>
-            <LineSeparator imageName={'grey-line.png'}/>
+            <HorizontalLineSeparator imageName={'grey-line.png'}/>
         </View>
     )
 };

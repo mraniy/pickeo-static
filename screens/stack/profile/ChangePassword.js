@@ -2,7 +2,7 @@
 import {ScrollView, View} from "react-native";
 import React, {useState} from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
-import LineSeparator from "../../../components/LineSeparator";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import StyledLabel from "../../../components/StyledLabel";
 import StyledTextInput from "../../../components/StyledTextInput";
 import StyledButton from "../../../components/StyledButton";
