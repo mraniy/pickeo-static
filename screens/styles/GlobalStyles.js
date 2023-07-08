@@ -70,7 +70,7 @@ const GlobalStyles = StyleSheet.create({
     },
     linkTextSmall: {
         fontSize: 15,
-        fontWeight: '800',
+        fontWeight: '700',
         color: '#1E847F'
     },
 
@@ -103,13 +103,25 @@ const GlobalStyles = StyleSheet.create({
         marginVertical: 0
     },
 
+
+
+
+    //dont delete
+    //color: "#141e83",
+    //padding: 4,
+    //fontSize: 13,
+    //marginHorizontal: 20,
+    //marginVertical: 4
+
+
     //////Les DATES
     textDate: {
-        color: "#141e83",
-        padding: 4,
-        fontSize: 13,
-        marginHorizontal: 20,
-        marginVertical: 4
+        color: "#357b9c",
+        fontWeight: "400",
+        paddingVertical: 12,
+        fontSize: 14,
+        marginHorizontal: 0,
+        marginVertical: 0
     },
 
     ////////////////////////////////////////////FORMULAIRES///////////////////////////////////////////////////////////

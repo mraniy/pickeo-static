@@ -3,7 +3,7 @@ import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator
 import React from "react";
 import StyledLink from "../../../components/StyledLink";
 import GlobalStyles from "../../styles/GlobalStyles";
-import {Ionicons} from "@expo/vector-icons";
+import {Ionicons, FontAwesome, Foundation} from "@expo/vector-icons";
 
 const UnitNextTravel = ({fromCity, toCity, travelDate, matchingOrdersCount}) => {
     return (
@@ -18,22 +18,20 @@ const UnitNextTravel = ({fromCity, toCity, travelDate, matchingOrdersCount}) => 
                 <HorizontalLineSeparator/>
             </View>
 
-            <View style={ {backgroundColor: "white"} }>
-                <View style={GlobalStyles.viewRowContainer}>
-                    <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
-                    <Text style={styles.routeDate}>{'' +travelDate}</Text>
-                </View>
+            <View style={GlobalStyles.viewRowContainer}>
+                <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
+                <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
+                <Text style={styles.routeDate}>{'' +travelDate}</Text>
+            </View>
 
-                <View style={GlobalStyles.viewRowContainer}>
-                    <Ionicons name="cart" style={GlobalStyles.iconStyle}/>
-                    {matchingOrdersCount !==0 && (
-                        <StyledLink link={"MatchingOrdersByTravel"} linkLabel={"-> " + matchingOrdersCount + " orders matched"} style={GlobalStyles.linkContainer} smallFont={true}/>
-                    )}
-                    {matchingOrdersCount ===0 && (
-                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 8}]}>No matching orders yet</Text>
-                    )}
-                </View>
+            <View style={GlobalStyles.viewRowContainer}>
+                <FontAwesome name="shopping-cart" style={GlobalStyles.iconStyle}/>
+                {matchingOrdersCount !==0 && (
+                    <StyledLink link={"MatchingOrdersByTravel"} linkLabel={"-> " + matchingOrdersCount + " orders matched"} style={GlobalStyles.linkContainer} smallFont={true}/>
+                )}
+                {matchingOrdersCount ===0 && (
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 8}]}>No matching orders yet</Text>
+                )}
             </View>
 
         </View>
