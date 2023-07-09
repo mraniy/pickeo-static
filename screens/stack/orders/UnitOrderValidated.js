@@ -14,43 +14,41 @@ const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, 
 
             <View style={ [GlobalStyles.viewRowContainer] }>
 
-                <View style={ [GlobalStyles.viewColumnContainer] }>
-                    <View style={ [GlobalStyles.viewRowContainer] }>
-                        <Text style={GlobalStyles.textGreyed}>{status}</Text>
-                        {
-                            status === "DELIVERED" ?<View style = {  {marginLeft:80}  }></View>: ""
-                        }
-                    </View>
+                {
+                    status === "DELIVERED" ?
+                        <View style={ [GlobalStyles.viewRowContainer, {marginTop:4}] }>
+                            <FontAwesome5 name="hands-helping" style={GlobalStyles.iconStyle}/>
+                            <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>{status}</Text>
+                            <View style = {  {marginLeft:65}  }></View>
 
-                    <View style={ [GlobalStyles.viewRowContainer] }>
-                        {
-                            status === "WAITING_FOR_DELIVERY" ?  <FontAwesome5 name="people-arrows" style={GlobalStyles.iconStyle}/> :
-                                <FontAwesome5 name="hands-helping" style={GlobalStyles.iconStyle}/>
-                        }
+                        </View>
+                        : ""
+                }
 
-                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On  </Text>
-                        <Text style={GlobalStyles.textDate}>{status === "WAITING_FOR_DELIVERY" ? expectedDeliveryDate : deliveryDate}</Text>
-                    </View>
-                </View>
+                {
+                    status === "WAITING_FOR_DELIVERY" ?
+                        <View style={ [GlobalStyles.viewColumnContainer] }>
+                            <Text style={GlobalStyles.textGreyed}>{status}</Text>
+                            <View style={ [GlobalStyles.viewRowContainer] }>
+                                <FontAwesome5 name="people-arrows" style={GlobalStyles.iconStyle}/>
+                                <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On  </Text>
+                                <Text style={GlobalStyles.textDate}>{expectedDeliveryDate}</Text>
+                            </View>
 
-                <Ionicons name="ellipsis-vertical" style={[GlobalStyles.iconStyle, {marginLeft:0, paddingTop:20, color:"grey", fontSize:20}]}/>
+                        </View>
+                        : ""
+                }
 
 
-                <View style={ [GlobalStyles.viewRowContainer, {marginTop:10, marginLeft:10}] }>
+
+
+
+                <Ionicons name="ellipsis-vertical" style={[GlobalStyles.iconStyle, {marginLeft:0, paddingTop:18, color:"grey", fontSize:20}]}/>
+
+                <View style={ [GlobalStyles.viewRowContainer, {marginTop:8, marginLeft:10}] }>
                     <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
                     <Text style={[GlobalStyles.textBold, {marginHorizontal:4, marginVertical: 9}]}>{price + fee}E</Text>
                 </View>
-
-
-
-
-
-
-
-
-
-
-
 
             </View>
 
