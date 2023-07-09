@@ -3,7 +3,7 @@ import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator
 import React from "react";
 import StyledLink from "../../../components/StyledLink";
 import GlobalStyles from "../../styles/GlobalStyles";
-import {Ionicons, Foundation, FontAwesome} from "@expo/vector-icons";
+import {Foundation, Fontisto} from "@expo/vector-icons";
 
 const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
     return (
@@ -14,7 +14,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
             </View>
 
             <View style={ [GlobalStyles.viewRowContainer] }>
-                <Ionicons name="wallet" style={GlobalStyles.iconStyle}/>
+                <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
                 <Text style={[GlobalStyles.textBold, {marginHorizontal:4, marginVertical: 9}]}>{price + fee}E</Text>
             </View>
 
@@ -27,7 +27,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
 
             {status ==="WAITING_FOR_TRAVELER" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
-                    <FontAwesome name="shopping-bag" style={  [GlobalStyles.iconStyle, {paddingBottom:10}]  }/>
+                    <Fontisto name="suitcase" style={  [GlobalStyles.iconStyle, {paddingBottom:10}]  }/>
                     {offersCount !==0 && (
                         <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer} smallFont={true}/>
                     )}

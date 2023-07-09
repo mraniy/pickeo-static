@@ -10,7 +10,7 @@ const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
             <Text style={GlobalStyles.textBold}>{price}</Text>
             <Text style={GlobalStyles.textBold}>{fee}</Text>
             <Text style={GlobalStyles.textGreyed}>{shopper.firstName}</Text>
-            <HorizontalLineSeparator imageName={'grey-line.png'}/>
+            <HorizontalLineSeparator/>
         </View>
     )
 };
