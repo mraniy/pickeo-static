@@ -28,7 +28,7 @@ const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, 
                 {
                     status === "WAITING_FOR_DELIVERY" ?
                         <View style={ [GlobalStyles.viewColumnContainer] }>
-                            <Text style={GlobalStyles.textGreyed}>{status}</Text>
+                            <Text style={  [GlobalStyles.textGreyed, {paddingLeft:0, paddingBottom:0}]  }>{status}</Text>
                             <View style={ [GlobalStyles.viewRowContainer] }>
                                 <FontAwesome5 name="people-arrows" style={GlobalStyles.iconStyle}/>
                                 <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On  </Text>
@@ -39,13 +39,9 @@ const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, 
                         : ""
                 }
 
-
-
-
-
                 <Ionicons name="ellipsis-vertical" style={[GlobalStyles.iconStyle, {marginLeft:0, paddingTop:18, color:"grey", fontSize:20}]}/>
 
-                <View style={ [GlobalStyles.viewRowContainer, {marginTop:8, marginLeft:10}] }>
+                <View style={ [GlobalStyles.viewRowContainer, {marginTop:8, marginLeft:1}]  }>
                     <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
                     <Text style={[GlobalStyles.textBold, {marginHorizontal:4, marginVertical: 9}]}>{price + fee}E</Text>
                 </View>

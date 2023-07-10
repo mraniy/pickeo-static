@@ -10,7 +10,6 @@ const UnitOfferByOrder = ({fee, date,traveler}) => {
             <Text style={GlobalStyles.textBold}>{fee}</Text>
             <Text style={GlobalStyles.textGreyed}>{date}</Text>
             <Text style={GlobalStyles.textGreyed}>{traveler.firstName}</Text>
-            <HorizontalLineSeparator/>
         </View>
     )
 };

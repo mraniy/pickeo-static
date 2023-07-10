@@ -1,14 +1,36 @@
 import {FlatList, StyleSheet, Text, View} from "react-native";
 import React from "react";
 import UnitOfferByOrder from "./UnitOfferByOrder";
+import GlobalStyles from "../../styles/GlobalStyles";
+import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
+import {Fontisto, MaterialCommunityIcons} from "@expo/vector-icons";
 
 const OffersByOrder = ({navigation}) => {
     const data = require('../../../mocks/offersByOrder');
     return (
         <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
-           <Text> {data.title}  </Text>
-           <Text> {data.productPrice}  </Text>
-           <Text> {data.fee}  </Text>
+            <View style={GlobalStyles.window}>
+                <Text style={  [GlobalStyles.textPlain, {fontWeight:800}]  }>{data.title}</Text>
+                <View style={{marginTop: 4, marginBottom:4}}>
+                    <HorizontalLineSeparator/>
+                </View>
+
+                <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
+                    <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
+                    <View style={ [GlobalStyles.viewColumnContainer] }>
+                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Product price</Text>
+                        <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{data.productPrice}E</Text>
+                    </View>
+
+                    <MaterialCommunityIcons name="hand-coin"  style={GlobalStyles.iconStyle}/>
+                    <View style={ [GlobalStyles.viewColumnContainer] }>
+                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Traveller tip</Text>
+                        <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{data.fee}E</Text>
+                    </View>
+
+                </View>
+            </View>
+
             <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
                 <FlatList data={data.offers}
                           renderItem={({item}) =>
