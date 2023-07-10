@@ -13,6 +13,14 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
                 <HorizontalLineSeparator/>
             </View>
 
+            {status ==="WAITING_FOR_VALIDATION" && (
+                <View style={ [GlobalStyles.viewRowContainer] }>
+                    <Foundation name="magnifying-glass" style={GlobalStyles.iconStyle}/>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>{status}</Text>
+                </View>
+            )}
+
+
             <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
                 <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
                 <View style={ [GlobalStyles.viewColumnContainer, {marginRight:80}] }>
@@ -28,12 +36,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
 
             </View>
 
-            {status ==="WAITING_FOR_VALIDATION" && (
-                <View style={ [GlobalStyles.viewRowContainer] }>
-                    <Foundation name="magnifying-glass" style={GlobalStyles.iconStyle}/>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>{status}</Text>
-                </View>
-            )}
+
 
             {status ==="WAITING_FOR_TRAVELER" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
