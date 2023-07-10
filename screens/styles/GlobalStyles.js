@@ -117,7 +117,7 @@ const GlobalStyles = StyleSheet.create({
     //////Les DATES
     textDate: {
         color: "#357b9c",
-        fontWeight: "400",
+        fontWeight: "600",
         paddingVertical: 12,
         fontSize: 14,
         marginHorizontal: 0,
@@ -164,6 +164,6 @@ const GlobalStyles = StyleSheet.create({
 
     },
 
-})
+});
 
 export default GlobalStyles

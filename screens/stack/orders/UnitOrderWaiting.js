@@ -16,22 +16,22 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
             {status ==="WAITING_FOR_VALIDATION" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
                     <Foundation name="magnifying-glass" style={GlobalStyles.iconStyle}/>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>{status}</Text>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 9}]}>{status}</Text>
                 </View>
             )}
 
 
             <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
                 <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
-                <View style={ [GlobalStyles.viewColumnContainer, {marginRight:80}] }>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Price</Text>
-                    <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{price}E</Text>
+                <View style={ [GlobalStyles.viewColumnContainer, {marginRight:90}] }>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>Price</Text>
+                    <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{price}E</Text>
                 </View>
 
                 <MaterialCommunityIcons name="hand-coin"  style={GlobalStyles.iconStyle}/>
                 <View style={ [GlobalStyles.viewColumnContainer] }>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Traveller tip</Text>
-                    <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{fee}E</Text>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>Traveller tip</Text>
+                    <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{fee}E</Text>
                 </View>
 
             </View>
@@ -45,7 +45,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
                         <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer} smallFont={true}/>
                     )}
                     {offersCount ===0 && status === 'WAITING_FOR_TRAVELER' && (
-                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 8}]}>No offers yet</Text>
+                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 8, paddingLeft:0}]}>No offers yet</Text>
                     )}
 
                 </View>

@@ -17,15 +17,15 @@ const OffersByOrder = ({navigation}) => {
 
                 <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
                     <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
-                    <View style={ [GlobalStyles.viewColumnContainer] }>
-                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Product price</Text>
-                        <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{data.productPrice}E</Text>
+                    <View style={ [GlobalStyles.viewColumnContainer, {marginRight:40}] }>
+                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>Product price</Text>
+                        <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{data.productPrice}E</Text>
                     </View>
 
                     <MaterialCommunityIcons name="hand-coin"  style={GlobalStyles.iconStyle}/>
                     <View style={ [GlobalStyles.viewColumnContainer] }>
-                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Traveller tip</Text>
-                        <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{data.fee}E</Text>
+                        <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>Traveller tip</Text>
+                        <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{data.fee}E</Text>
                     </View>
 
                 </View>
@@ -47,6 +47,6 @@ const OffersByOrder = ({navigation}) => {
 
     )
 };
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
 
 export default OffersByOrder
