@@ -3,7 +3,7 @@ import React from "react";
 import UnitOfferByOrder from "./UnitOfferByOrder";
 import GlobalStyles from "../../styles/GlobalStyles";
 import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
-import {Fontisto, MaterialCommunityIcons} from "@expo/vector-icons";
+import {FontAwesome, FontAwesome5, MaterialCommunityIcons} from "@expo/vector-icons";
 
 const OffersByOrder = ({navigation}) => {
     const data = require('../../../mocks/offersByOrder');
@@ -16,7 +16,7 @@ const OffersByOrder = ({navigation}) => {
                 </View>
 
                 <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
-                    <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
+                    <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
                     <View style={ [GlobalStyles.viewColumnContainer] }>
                         <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Product price</Text>
                         <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{data.productPrice}E</Text>

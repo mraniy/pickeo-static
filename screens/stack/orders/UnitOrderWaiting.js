@@ -3,7 +3,7 @@ import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator
 import React from "react";
 import StyledLink from "../../../components/StyledLink";
 import GlobalStyles from "../../styles/GlobalStyles";
-import {Foundation, Fontisto} from "@expo/vector-icons";
+import {Foundation, Fontisto, MaterialCommunityIcons, FontAwesome5, FontAwesome} from "@expo/vector-icons";
 
 const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
     return (
@@ -13,9 +13,19 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
                 <HorizontalLineSeparator/>
             </View>
 
-            <View style={ [GlobalStyles.viewRowContainer] }>
-                <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
-                <Text style={[GlobalStyles.textBold, {marginHorizontal:4, marginVertical: 9}]}>{price + fee}E</Text>
+            <View style={ [GlobalStyles.viewRowContainer, {marginBottom:10}] }>
+                <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
+                <View style={ [GlobalStyles.viewColumnContainer, {marginRight:80}] }>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Price</Text>
+                    <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{price}E</Text>
+                </View>
+
+                <MaterialCommunityIcons name="hand-coin"  style={GlobalStyles.iconStyle}/>
+                <View style={ [GlobalStyles.viewColumnContainer] }>
+                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:14, marginVertical: 4, padding:0}]}>Traveller tip</Text>
+                    <Text style={[GlobalStyles.textBold, {marginHorizontal:14, marginVertical: 0, padding:0}]}>{fee}E</Text>
+                </View>
+
             </View>
 
             {status ==="WAITING_FOR_VALIDATION" && (
