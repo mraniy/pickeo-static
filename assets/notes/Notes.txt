@@ -46,4 +46,5 @@ jaune fcb003 mauve AC11D9
 coolors vert 218249 marro  parfait 826621 claron 822132 822121 mauve 8338ec orange f77f00 marron foncé 8d0801
 amazon jaune fed713 bleu foncé 364759 ou 232F3F bleu vert 7ACCD6
 
-Rose f72585
+Rose f72585  
+avion orig 0897B4 bleu terne -- mauve eclat b63ca9

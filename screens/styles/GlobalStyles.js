@@ -34,6 +34,16 @@ const GlobalStyles = StyleSheet.create({
         width: 140,
         alignItems: 'center'
     },
+    buttonContainerSmall: {
+        borderRadius: 6,
+        paddingHorizontal: 4,
+        paddingVertical: 8,
+        backgroundColor: '#1b6997',
+        marginTop: 10,
+        height: 40,
+        width: 140,
+        alignItems: 'center'
+    },
 
     //try c9ee00
     btnText: {
@@ -103,20 +113,16 @@ const GlobalStyles = StyleSheet.create({
         marginVertical: 0
     },
 
-
-
-
-    //dont delete
-    //color: "#141e83",
-    //padding: 4,
-    //fontSize: 13,
-    //marginHorizontal: 20,
-    //marginVertical: 4
-
+    textRoute: {
+        color: "#16161D",
+        fontSize: 16,
+        fontWeight: "600",
+        marginTop: 10
+    },
 
     //////Les DATES
     textDate: {
-        color: "#357b9c",
+        color: "#3C6CB4",
         fontWeight: "600",
         paddingVertical: 12,
         fontSize: 14,
@@ -124,7 +130,8 @@ const GlobalStyles = StyleSheet.create({
         marginVertical: 0
     },
 
-    ////////////////////////////////////////////FORMULAIRES///////////////////////////////////////////////////////////
+
+////////////////////////////////////////////FORMULAIRES///////////////////////////////////////////////////////////
     /////////STYLE DES FORMULAIRES///////
     formContainer: {
         backgroundColor: 'white',

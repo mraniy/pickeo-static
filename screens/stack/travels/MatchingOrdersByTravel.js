@@ -12,9 +12,9 @@ const MatchingOrdersByTravel = ({navigation}) => {
 
             <View style={  [GlobalStyles.window, {backgroundColor:"#FDFDFC"}]  }>
                 <View style={GlobalStyles.viewRowContainer}>
-                    <Text style={  [styles.route, {marginLeft:20}]  }>{data.fromCity}</Text>
+                    <Text style={  [GlobalStyles.textRoute, {marginLeft:20}]  }>{data.fromCity}</Text>
                     <Ionicons name="airplane" style={[GlobalStyles.iconStyle, {width:"10%", color:"#0897B4"}]}/>
-                    <Text style={styles.route}>{data.toCity}</Text>
+                    <Text style={GlobalStyles.textRoute}>{data.toCity}</Text>
                 </View>
 
                 <View style={{marginTop: 10, marginBottom:6}}>
@@ -25,7 +25,7 @@ const MatchingOrdersByTravel = ({navigation}) => {
                     <View style={GlobalStyles.viewRowContainer}>
                         <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
                         <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
-                        <Text style={styles.routeDate}>{'' +data.travelDate}</Text>
+                        <Text style={  [GlobalStyles.textDate, { marginHorizontal: 2}]  }>{'' +data.travelDate}</Text>
 
                     </View>
 
@@ -51,22 +51,6 @@ const MatchingOrdersByTravel = ({navigation}) => {
     )
 };
 const styles = StyleSheet.create({
-    route: {
-        color: "#16161D",
-        fontSize: 16
-        ,
-        fontWeight: "600",
-        marginTop: 10
-    },
-    //357b9c 0047AB 00008B 357b9c
-    routeDate: {
-        color: "#357b9c",
-        fontWeight: "400",
-        paddingVertical: 12,
-        fontSize: 14,
-        marginHorizontal: 0,
-        marginVertical: 0
-    }
 
 });
 

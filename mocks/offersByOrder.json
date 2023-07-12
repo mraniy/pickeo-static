@@ -10,7 +10,9 @@
       "traveler": {
         "id": 1,
         "firstName": "first name 1",
-        "lastName": "last name 1"
+        "lastName": "last name 1",
+        "rating": 3,
+        "ratingCount": 10
       },
       "fee": 30,
       "date": "2023-10-05"
@@ -20,7 +22,9 @@
       "traveler": {
         "id": 2,
         "firstName": "first name 2",
-        "lastName": "last name 2"
+        "lastName": "last name 2",
+        "rating": 0,
+        "ratingCount": 0
       },
       "fee": 50,
       "date": "2023-09-05"
@@ -30,9 +34,35 @@
       "traveler": {
         "id": 3,
         "firstName": "first name 3",
-        "lastName": "last name 3"
+        "lastName": "last name 3",
+        "rating": 5,
+        "ratingCount": 8
       },
       "fee": 25,
+      "date": "2023-08-28"
+    },
+    {
+      "id": 12,
+      "traveler": {
+        "id": 20,
+        "firstName": "first name 20",
+        "lastName": "last name 20",
+        "rating": 3,
+        "ratingCount": 2
+      },
+      "fee": 20,
+      "date": "2023-08-28"
+    },
+    {
+      "id": 45,
+      "traveler": {
+        "id": 93,
+        "firstName": "first name 93",
+        "lastName": "last name 93",
+        "rating": 4,
+        "ratingCount": 1
+      },
+      "fee": 40,
       "date": "2023-08-28"
     }
   ]

@@ -1,4 +1,4 @@
-import {FlatList, StyleSheet, Text, View} from "react-native";
+import {FlatList, ScrollView, StyleSheet, Text, View} from "react-native";
 import React from "react";
 import UnitOfferByOrder from "./UnitOfferByOrder";
 import GlobalStyles from "../../styles/GlobalStyles";
@@ -31,18 +31,22 @@ const OffersByOrder = ({navigation}) => {
                 </View>
             </View>
 
-            <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
-                <FlatList data={data.offers}
-                          renderItem={({item}) =>
-                              <UnitOfferByOrder fee = {item.fee}
-                                                date = {item.date}
-                                                traveler = {item.traveler}
-                              />
-                          }>
 
-                </FlatList>
+                <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:0}}>
+                    <FlatList data={data.offers}
+                              renderItem={({item}) =>
+                                  <UnitOfferByOrder fee = {item.fee}
+                                                    date = {item.date}
+                                                    traveler = {item.traveler}
+                                  />
+                              }>
+
+                    </FlatList>
+                </View>
+
+
+
             </View>
-        </View>
 
 
     )
