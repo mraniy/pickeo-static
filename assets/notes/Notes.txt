@@ -1,7 +1,7 @@
 Friendshippr
 Zaagel egypte
 jib.li algerie
-Muber.com peu connu
+Muber.com peu connu ca6b3e
 
 airmule
 sendthrume A voir sur IA
@@ -36,3 +36,14 @@ inactiveBackgroundColor: 040707
 
 punch blue 3B4D61
 punchy lighter blue 1868AE 1E2761
+
+neon blue 
+
+Icones
+------
+orange et rouge dc543c vert eclat 32BBBA mauve b63ca9 5a189a rouge marron bf0603 b63c5b     (base d81159 CB205F best)
+jaune fcb003 mauve AC11D9
+coolors vert 218249 marro  parfait 826621 claron 822132 822121 mauve 8338ec orange f77f00 marron foncé 8d0801
+amazon jaune fed713 bleu foncé 364759 ou 232F3F bleu vert 7ACCD6
+
+Rose f72585

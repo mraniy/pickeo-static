@@ -158,7 +158,7 @@ const GlobalStyles = StyleSheet.create({
 //////////////////////////////////////////////ICONES/////////////////////////////////////////////////////////////////
     iconStyle: {
         fontSize: 22,
-        color: '#dc543c',
+        color: '#CB205F',
         marginLeft : 20,
         paddingTop: 10,
 

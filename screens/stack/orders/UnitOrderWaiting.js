@@ -15,7 +15,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
 
             {status ==="WAITING_FOR_VALIDATION" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
-                    <Foundation name="magnifying-glass" style={GlobalStyles.iconStyle}/>
+                    <Foundation name="magnifying-glass" style={  [GlobalStyles.iconStyle, {color:"#C520CB"}]  }/>
                     <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 9}]}>{status}</Text>
                 </View>
             )}
@@ -40,7 +40,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
 
             {status ==="WAITING_FOR_TRAVELER" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
-                    <Fontisto name="suitcase" style={  [GlobalStyles.iconStyle, {paddingBottom:10}]  }/>
+                    <Fontisto name="suitcase" style={  [GlobalStyles.iconStyle, {paddingBottom:10, color:'#CB5320'}]  }/>
                     {offersCount !==0 && (
                         <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer} smallFont={true}/>
                     )}
