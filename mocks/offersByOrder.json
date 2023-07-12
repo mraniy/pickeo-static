@@ -15,7 +15,9 @@
         "ratingCount": 10
       },
       "fee": 30,
-      "date": "2023-10-05"
+      "date": "2023-10-05",
+      "fromCity": "Casablanca",
+      "toCity": "Paris"
     },
     {
       "id": 7,
@@ -27,7 +29,9 @@
         "ratingCount": 0
       },
       "fee": 50,
-      "date": "2023-09-05"
+      "date": "2023-09-05",
+      "fromCity": "Paris",
+      "toCity": "Marrakesh"
     },
     {
       "id": 9,
@@ -39,7 +43,9 @@
         "ratingCount": 8
       },
       "fee": 25,
-      "date": "2023-08-28"
+      "date": "2023-08-28",
+      "fromCity": "Casablanca",
+      "toCity": "Rennes"
     },
     {
       "id": 12,
@@ -51,7 +57,9 @@
         "ratingCount": 2
       },
       "fee": 20,
-      "date": "2023-08-28"
+      "date": "2023-08-28",
+      "fromCity": "Casablanca",
+      "toCity": "Lyon"
     },
     {
       "id": 45,
@@ -63,7 +71,9 @@
         "ratingCount": 1
       },
       "fee": 40,
-      "date": "2023-08-28"
+      "date": "2023-08-28",
+      "fromCity": "Agadir",
+      "toCity": "Lyon"
     }
   ]
 }

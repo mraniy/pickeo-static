@@ -38,6 +38,8 @@ const OffersByOrder = ({navigation}) => {
                                   <UnitOfferByOrder fee = {item.fee}
                                                     date = {item.date}
                                                     traveler = {item.traveler}
+                                                    fromCity = {item.fromCity}
+                                                    toCity = {item.toCity}
                                   />
                               }>
 

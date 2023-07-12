@@ -164,7 +164,7 @@ const GlobalStyles = StyleSheet.create({
 
 //////////////////////////////////////////////ICONES/////////////////////////////////////////////////////////////////
     iconStyle: {
-        fontSize: 22,
+        fontSize: 25,
         color: '#CB205F',
         marginLeft : 20,
         paddingTop: 10,
