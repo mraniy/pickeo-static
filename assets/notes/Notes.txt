@@ -24,6 +24,8 @@ Icon inactif: 40678C
 activeBackgroundColor: ECF3F9
 inactiveBackgroundColor: white
 
+Textplain 3D3C3A
+
 
 Sur fond noir
 ---------------

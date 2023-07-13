@@ -123,7 +123,7 @@ const GlobalStyles = StyleSheet.create({
     //////Les DATES
     textDate: {
         color: "#3C6CB4",
-        fontWeight: "600",
+        fontWeight: "700",
         paddingVertical: 12,
         fontSize: 14,
         marginHorizontal: 0,

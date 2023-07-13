@@ -40,7 +40,7 @@ const UnitOrderWaiting = ({message, price, fee, status, offersCount}) => {
 
             {status ==="WAITING_FOR_TRAVELER" && (
                 <View style={ [GlobalStyles.viewRowContainer] }>
-                    <Fontisto name="suitcase" style={  [GlobalStyles.iconStyle, {paddingBottom:10, color:'#CB5320'}]  }/>
+                    <Fontisto name="suitcase" style={  [GlobalStyles.iconStyle, {paddingBottom:10, color:'#B43C6C'}]  }/>
                     {offersCount !==0 && (
                         <StyledLink link={"OffersByOrder"} linkLabel={"-> " + offersCount + " offers"} style={GlobalStyles.linkContainer} smallFont={true}/>
                     )}
