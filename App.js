@@ -72,9 +72,9 @@ export default function App() {
         return (<Tab.Navigator
 
             tabBarOptions={{
-                activeTintColor: '#F15C20', inactiveTintColor: '#40678C',
+                activeTintColor: '#F15454', inactiveTintColor: 'grey',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
-                activeBackgroundColor: '#ECF3F9',
+                activeBackgroundColor: 'white',
                 inactiveBackgroundColor: 'white'
             }}
         >
@@ -84,7 +84,7 @@ export default function App() {
                             tabBarLabel: 'Home',
                             headerShown: false,
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="home-outline" style={styles.navIconStyle}/>
+                                <Ionicons name="home-outline" style={styles.navIconStyle} color={color}/>
                             ),
                         }}/>
 
@@ -93,7 +93,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Orders',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="cart-outline" style={styles.navIconStyle}/>
+                                <Ionicons name="cart-outline" style={styles.navIconStyle} color={color}/>
                             ),
                         }}/>
 
@@ -102,7 +102,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Travels',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="airplane-outline" style={styles.navIconStyle}/>
+                                <Ionicons name="airplane-outline" style={styles.navIconStyle} color={color}/>
                             ),
                         }}/>
 
@@ -111,7 +111,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Earnings',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="cash-outline" style={styles.navIconStyle}/>
+                                <Ionicons name="cash-outline" style={styles.navIconStyle}  color={color}/>
                             ),
                         }}/>
             <Tab.Screen name="Profile"
@@ -119,7 +119,7 @@ export default function App() {
                         options={{
                             tabBarLabel: 'Profile',
                             tabBarIcon: ({color, size}) => (
-                                <Ionicons name="person-outline" style={styles.navIconStyle}/>
+                                <Ionicons name="person-outline" style={styles.navIconStyle} color={color}/>
                             ),
                         }}/>
         </Tab.Navigator>)
@@ -139,7 +139,6 @@ const styles = StyleSheet.create({
 
     navIconStyle: {
         fontSize: 25,
-        color: 'grey',
         paddingTop: 6
     },
 
