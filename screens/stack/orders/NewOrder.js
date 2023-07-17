@@ -44,8 +44,9 @@ const NewOrder = ({navigation}) => {
             </View>
         </ScrollView>
     )
-}
+};
+
 const styles = StyleSheet.create({
-})
+});
 
 export default NewOrder

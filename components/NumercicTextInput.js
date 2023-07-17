@@ -1,7 +1,7 @@
 import {StyleSheet, TextInput} from "react-native";
 import React from "react";
 
-const NumericTextInput = ({placeholder, value, onChangeText}) => {
+const NumericTextInput = ({placeholder, value, onChangeText, style2}) => {
 
     return (
         <TextInput
@@ -9,11 +9,11 @@ const NumericTextInput = ({placeholder, value, onChangeText}) => {
             value={value}
             onChangeText={onChangeText}
             keyboardType='numeric'
-            style={styles.numeric}
+            style={  [styles.numeric, style2  ] }
         />
 
     )
-}
+};
 export default NumericTextInput
 
 const styles = StyleSheet.create({
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         width: '20%',
     }
-})
+});

@@ -39,16 +39,11 @@ const OffersByOrder = ({navigation}) => {
                                 <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{data.productPrice}E</Text>
                             </View>
 
-                            {/*
-
-                            //DONT DELETE
-
                             <MaterialCommunityIcons name="hand-coin"  style={GlobalStyles.iconStyle}/>
                             <View style={ [GlobalStyles.viewColumnContainer] }>
                                 <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>Traveller tip</Text>
                                 <Text style={[GlobalStyles.textBold, {marginHorizontal:10, marginVertical: 0, padding:0}]}>{data.fee}E</Text>
                             </View>
-                            */}
 
                         </View>
 
