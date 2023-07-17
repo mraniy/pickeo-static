@@ -9,7 +9,8 @@ import NumericTextInput from "../../../components/NumercicTextInput";
 
 
 const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
-    const [offer, setOffer] = useState(offer);
+    const [offer, setOffer] = useState(fee);
+    //setOffer (fee);
     return (
         <View style={GlobalStyles.window}>
             <Text style={  [GlobalStyles.textPlain, {fontWeight:800}]  }>{title}</Text>
@@ -43,13 +44,13 @@ const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
 
                     <NumericTextInput name = {title}
                                       placeholder=""
-                                      value={offer}
+                                      value={offer+""}
                                       onChangeText={text => setOffer(text)}
                                       style2={{height:40, width:50, marginLeft:10}}
                                       />
 
                 </View>
-                <StyledButton buttonLabel={"Bring for "+(fee)+"E"} buttonLink={"Home"} small={true}/>
+                <StyledButton buttonLabel={"Bring for "+(offer)+"E"} buttonLink={"Home"} small={true}/>
 
             </View>
 
