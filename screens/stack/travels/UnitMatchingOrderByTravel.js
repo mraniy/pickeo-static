@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Pressable, StyleSheet, Text, View} from 'react-native';
 import HorizontalLineSeparator from "../../../components/HorizontalLineSeparator";
 import React, {useState} from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
@@ -6,11 +6,15 @@ import {FontAwesome, MaterialCommunityIcons} from "@expo/vector-icons";
 import StyledButton from "../../../components/StyledButton";
 import StyledLabel from "../../../components/StyledLabel";
 import NumericTextInput from "../../../components/NumercicTextInput";
+import Toggle from "react-native-toggle-element";
+
 
 
 const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
     const [offer, setOffer] = useState(fee);
-    //setOffer (fee);
+    const [toggleValue, setToggleValue] = useState(false);
+    const [toggleLabel, setToggleLabel] = useState( '' );
+
     return (
         <View style={GlobalStyles.window}>
             <Text style={  [GlobalStyles.textPlain, {fontWeight:800}]  }>{title}</Text>
@@ -45,12 +49,39 @@ const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
                     <NumericTextInput name = {title}
                                       placeholder=""
                                       value={offer+""}
+                                      editable={!toggleValue}
                                       onChangeText={text => setOffer(text)}
-                                      style2={{height:40, width:50, marginLeft:10}}
+                                      style2={  { height:40, width:50, marginLeft:10 }  }
                                       />
 
                 </View>
-                <StyledButton buttonLabel={"Bring for "+(offer)+"E"} buttonLink={"Home"} small={true}/>
+
+                <View style={  {marginTop:10}  }>
+                <Toggle
+                    value={toggleValue}
+                    onPress={  (newState) => setToggleValue(newState)  }
+                    leftTitle = {  <Text style={GlobalStyles.toggleText}>{"No"}</Text>  }
+                    rightTitle= { <Text style={GlobalStyles.toggleText}>{"Yes"}</Text>  }
+                    trackBar={{
+                        width: 120,
+                        height: 35,
+                        radius: 25,
+                        activeBackgroundColor:"#E0A2A1",
+                        inActiveBackgroundColor:"#c24341"
+
+                    }}
+
+                    thumbButton={{
+                        width: 50,
+                        height: 35,
+                        radius: 20,
+                        activeBackgroundColor:"#3b5f73",
+                        inActiveBackgroundColor:"#3b5f73"
+
+                    }}
+
+                />
+                </View>
 
             </View>
 

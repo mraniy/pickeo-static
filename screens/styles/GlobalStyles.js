@@ -120,6 +120,12 @@ const GlobalStyles = StyleSheet.create({
         marginTop: 10
     },
 
+    toggleText: {
+        fontSize:14,
+        color: "#FFF1D7"
+
+    },
+
     //////Les DATES
     textDate: {
         color: "#3C6CB4",

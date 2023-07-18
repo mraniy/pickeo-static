@@ -1,7 +1,7 @@
 import {StyleSheet, TextInput} from "react-native";
 import React from "react";
 
-const NumericTextInput = ({placeholder, value, onChangeText, style2}) => {
+const NumericTextInput = ({placeholder, value, onChangeText, style2, editable}) => {
 
     return (
         <TextInput
@@ -9,6 +9,7 @@ const NumericTextInput = ({placeholder, value, onChangeText, style2}) => {
             value={value}
             onChangeText={onChangeText}
             keyboardType='numeric'
+            editable={editable}
             style={  [styles.numeric, style2  ] }
         />
 
