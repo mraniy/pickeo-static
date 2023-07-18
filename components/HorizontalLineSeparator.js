@@ -3,7 +3,7 @@ import React from "react";
 
 const HorizontalLineSeparator = (imageName) => {
     return (
-        <View style={styles.container}>
+        <View>
             <Image
                 style={styles.stretch}
                 source={require('../assets/images/separators/horizontal-grey-line.png')}
