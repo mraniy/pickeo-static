@@ -19,12 +19,10 @@ const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, 
                         <View style={ [GlobalStyles.viewRowContainer, {marginTop:4, marginBottom:10}] }>
                             <FontAwesome name="shopping-bag" style={GlobalStyles.iconStyle}/>
                             <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>{status}</Text>
-                            <View style = {  {marginLeft:65}  }></View>
-
+                            <View style = {  {marginLeft:85}  }></View>
                         </View>
                         : ""
                 }
-
 
                 {
                     status === "WAITING_FOR_DELIVERY" ?
@@ -32,18 +30,14 @@ const UnitOrderValidated = ({message, price, fee, status, expectedDeliveryDate, 
                             <FontAwesome5 name="box-open" style={[GlobalStyles.iconStyle, {paddingTop:8}]}/>
                             <View style={ [GlobalStyles.viewColumnContainer] }>
                                 <Text style={[GlobalStyles.textGreyed, {marginHorizontal:10, marginVertical: 4, padding:0}]}>WAITING DELIVERY</Text>
-
                                 <View style={ [GlobalStyles.viewRowContainer] }>
                                     <Text style={[GlobalStyles.textDate, {marginHorizontal:10, marginVertical: 0, paddingVertical:0}]}>{">> "+expectedDeliveryDate+""}</Text>
                                 </View>
-
                             </View>
-
+                            <View style = {  {marginLeft:25}  }></View>
                         </View>
                         : ""
                 }
-
-                <Ionicons name="ellipsis-vertical" style={[GlobalStyles.iconStyle, {marginLeft:0, paddingTop:16, color:"grey", fontSize:20}]}/>
 
                 <View style={ [GlobalStyles.viewRowContainer, {marginTop:6, marginLeft:10}]  }>
                     <Fontisto name="wallet" style={GlobalStyles.iconStyle}/>
