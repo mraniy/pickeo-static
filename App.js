@@ -109,7 +109,7 @@ export default function App() {
             <Tab.Screen name="Deals"
                         component={Deals}
                         options={{
-                            tabBarLabel: 'Under67$',
+                            tabBarLabel: 'Top deals',
                             tabBarIcon: ({color, size}) => (
                                 <Ionicons name="cash-outline" style={styles.navIconStyle}  color={color}/>
                             ),
