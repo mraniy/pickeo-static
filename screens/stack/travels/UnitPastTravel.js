@@ -7,7 +7,7 @@ import StyledLink from "../../../components/StyledLink";
 
 const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
     return (
-        <View style={  [GlobalStyles.window, {backgroundColor:"#FDFDFC"}]  }>
+        <View style={GlobalStyles.window}>
             <View style={GlobalStyles.viewRowContainer}>
                 <Text style={  [GlobalStyles.textRoute, {marginLeft:20}]  }>{fromCity}</Text>
                 <Ionicons name="airplane" style={[GlobalStyles.iconStyle, {width:"10%", color:"#0897B4"}]}/>
@@ -18,13 +18,10 @@ const UnitPastTravel = ({fromCity, toCity, travelDate}) => {
                 <HorizontalLineSeparator/>
             </View>
 
-            <View style={ {backgroundColor: "white"} }>
-                <View style={GlobalStyles.viewRowContainer}>
-                    <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
-                    <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
-                    <Text style={  [GlobalStyles.textDate, { marginHorizontal: 2}]  }>{'' +travelDate}</Text>
-
-                </View>
+            <View style={GlobalStyles.viewRowContainer}>
+                <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
+                <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
+                <Text style={  [GlobalStyles.textDate, { marginHorizontal: 2}]  }>{'' +travelDate}</Text>
 
             </View>
 

@@ -21,6 +21,7 @@ const OrdersWaiting = ({navigation}) => {
                                               status={item.status}
                                               deliveryDate={item.deliveryDate}
                                               expectedDeliveryDate={item.expectedDeliveryDate}
+                                              traveler={item.traveler}
                           />
                       }>
 
@@ -29,6 +30,6 @@ const OrdersWaiting = ({navigation}) => {
 
     )
 };
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
 
 export default OrdersWaiting

@@ -8,7 +8,7 @@ import NumericTextInput from "../../../components/NumercicTextInput";
 import Toggle from "react-native-toggle-element";
 import {Rating} from "react-native-ratings";
 import StyledLink from "../../../components/StyledLink";
-
+import SmallHorizontalLineSeparator from "../../../components/SmallHorizontalLineSeparator";
 
 const UnitMatchingOrderByTravel = ({title, price, fee, shopper}) => {
     const [offer, setOffer] = useState(fee);

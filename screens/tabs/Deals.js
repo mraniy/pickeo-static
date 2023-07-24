@@ -1,13 +1,13 @@
 import {StyleSheet, Text, View} from "react-native";
 
 
-const Earnings = ({navigation}) => {
+const Deals = ({navigation}) => {
     return (
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>Earnings!</Text>
+            <Text>Deals!</Text>
         </View>
     )
-}
-const styles = StyleSheet.create({})
+};
+const styles = StyleSheet.create({});
 
-export default Earnings
+export default Deals

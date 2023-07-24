@@ -5,7 +5,7 @@ import Home from "./screens/tabs/Home";
 import {FontAwesome, Ionicons} from "@expo/vector-icons";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Orders from "./screens/tabs/Orders";
-import Earnings from "./screens/tabs/Earnings";
+import Deals from "./screens/tabs/Deals";
 import Profile from "./screens/tabs/Profile";
 import React from "react";
 import Login from "./screens/stack/login/Login";
@@ -72,7 +72,7 @@ export default function App() {
         return (<Tab.Navigator
 
             tabBarOptions={{
-                activeTintColor: '#F15454', inactiveTintColor: 'grey',
+                activeTintColor: '#F15454', inactiveTintColor: '#888888',
                 labelStyle: {paddingBottom: 2, fontWeight: '100', fontSize: 13, paddingTop: 0, paddingLeft: 2},
                 activeBackgroundColor: 'white',
                 inactiveBackgroundColor: 'white'
@@ -106,10 +106,10 @@ export default function App() {
                             ),
                         }}/>
 
-            <Tab.Screen name="Earnings"
-                        component={Earnings}
+            <Tab.Screen name="Deals"
+                        component={Deals}
                         options={{
-                            tabBarLabel: 'Earnings',
+                            tabBarLabel: 'Under67$',
                             tabBarIcon: ({color, size}) => (
                                 <Ionicons name="cash-outline" style={styles.navIconStyle}  color={color}/>
                             ),
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
 
     navIconStyle: {
         fontSize: 25,
-        paddingTop: 6
+        paddingTop: 6,
     },
 
     headerIconStyle: {

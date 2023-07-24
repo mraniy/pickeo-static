@@ -7,7 +7,7 @@ import {Ionicons, FontAwesome, Foundation} from "@expo/vector-icons";
 
 const UnitNextTravel = ({fromCity, toCity, travelDate, matchingOrdersCount}) => {
     return (
-        <View style={  [GlobalStyles.window, {backgroundColor:"#FDFDFC"}]  }>
+        <View style={GlobalStyles.window}>
             <View style={ [GlobalStyles.viewRowContainer] }>
                 <Text style={  [GlobalStyles.textRoute, {marginLeft:20}]  }>{fromCity}</Text>
                 <Ionicons name="airplane" style={[GlobalStyles.iconStyle, {width:"10%", color:"#0897B4"}]}/>

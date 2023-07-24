@@ -10,7 +10,7 @@ import {Entypo, FontAwesome, Fontisto, Ionicons} from "@expo/vector-icons";
 
 const UnitOfferByOrder = ({fee, date,traveler, fromCity, toCity}) => {
     return (
-        <View style={  [GlobalStyles.window, {borderTopLeftRadius:6, borderTopRightRadius:6, borderBottomLeftRadius:6, borderBottomRightRadius:6}, styles.box]  }>
+        <View style={GlobalStyles.window}>
 
             <View style={[GlobalStyles.viewRowContainer,{marginLeft:0}]}>
                 <View style={ [GlobalStyles.viewRowContainer] }>

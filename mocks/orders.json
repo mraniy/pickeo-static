@@ -9,7 +9,14 @@
     "status": "WAITING_FOR_DELIVERY",
     "expectedDeliveryDate": "2023-06-25",
     "deliveryDate": null,
-    "offersCount": 0
+    "offersCount": 0,
+    "traveler": {
+      "id": 1,
+      "firstName": "first name 1",
+      "lastName": "last name 1",
+      "rating": 3,
+      "ratingCount": 10
+    }
   },
   {
     "id": 2,
@@ -45,7 +52,14 @@
     "status": "DELIVERED",
     "expectedDeliveryDate": "2023-06-20",
     "deliveryDate": "2023-06-25",
-    "offersCount": 0
+    "offersCount": 0,
+    "traveler": {
+      "id": 1,
+      "firstName": "first name 1",
+      "lastName": "last name 1",
+      "rating": 2,
+      "ratingCount": 6
+    }
   },
   {
     "id": 5,
@@ -57,7 +71,14 @@
     "status": "WAITING_FOR_DELIVERY",
     "expectedDeliveryDate": "2023-07-25",
     "deliveryDate": null,
-    "offersCount": 0
+    "offersCount": 0,
+    "traveler": {
+      "id": 1,
+      "firstName": "first name 1",
+      "lastName": "last name 1",
+      "rating": 4,
+      "ratingCount": 9
+    }
   },
   {
     "id": 6,
@@ -69,7 +90,14 @@
     "status": "WAITING_FOR_VALIDATION",
     "expectedDeliveryDate": null,
     "deliveryDate": null,
-    "offersCount": 0
+    "offersCount": 0,
+    "traveler": {
+      "id": 1,
+      "firstName": "first name 1",
+      "lastName": "last name 1",
+      "rating": 0,
+      "ratingCount": 0
+    }
   },
   {
     "id": 7,
@@ -93,7 +121,14 @@
     "status": "DELIVERED",
     "expectedDeliveryDate": "2023-08-25",
     "deliveryDate": "2023-08-27",
-    "offersCount": 0
+    "offersCount": 0,
+    "traveler": {
+      "id": 1,
+      "firstName": "first name 1",
+      "lastName": "last name 1",
+      "rating": 1,
+      "ratingCount": 1
+    }
   },
   {
     "id": 9,

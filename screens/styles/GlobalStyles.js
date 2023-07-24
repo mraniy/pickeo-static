@@ -18,7 +18,8 @@ const GlobalStyles = StyleSheet.create({
         marginTop: 12,
         marginBottom: 0,
         flexDirection: 'column',
-        backgroundColor: 'white',
+        borderRadius : 20,
+        backgroundColor: '#FDFDFC',
         width: "97%"
     },
 
@@ -176,6 +177,13 @@ const GlobalStyles = StyleSheet.create({
         paddingTop: 10,
 
     },
+
+///////////////////////////////////////////////////////FOOTER/////////////////////////////////////////////////////////
+    footer:{
+        width:"90%",
+        height:2,
+        backgroundColor: "#7786c2"
+    }
 
 });
 

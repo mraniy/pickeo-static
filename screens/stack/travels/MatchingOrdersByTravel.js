@@ -16,7 +16,7 @@ const MatchingOrdersByTravel = ({navigation}) => {
     return (
         <View style={{flex: 1, flexDirection:'column', justifyContent: 'center', marginLeft:10}}>
 
-            <View style={  [GlobalStyles.window, {backgroundColor:"#FDFDFC"}]  }>
+            <View style={GlobalStyles.window}>
                 <Collapse isExpanded={false}
                           onToggle={switchIcon} >
                     <CollapseHeader>
@@ -34,15 +34,19 @@ const MatchingOrdersByTravel = ({navigation}) => {
                             <HorizontalLineSeparator/>
                         </View>
 
-                        <View style={ {backgroundColor: "white"} }>
-                            <View style={GlobalStyles.viewRowContainer}>
-                                <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
-                                <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
-                                <Text style={  [GlobalStyles.textDate, { marginHorizontal: 2}]  }>{'' +data.travelDate}</Text>
-                            </View>
+                        <View style={GlobalStyles.viewRowContainer}>
+                            <Ionicons name="calendar" style={GlobalStyles.iconStyle}/>
+                            <Text style={[GlobalStyles.textGreyed, {marginHorizontal:4, marginVertical: 9}]}>On</Text>
+                            <Text style={  [GlobalStyles.textDate, { marginHorizontal: 2}]  }>{'' +data.travelDate}</Text>
                         </View>
+
                     </CollapseBody>
                 </Collapse>
+
+                <View style={{alignItems: "center"}}>
+                    <View style={GlobalStyles.footer}></View>
+                </View>
+
             </View>
 
             <View style={{flex: 1, flexDirection:'column', justifyContent: 'center'}}>

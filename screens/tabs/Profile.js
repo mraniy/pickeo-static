@@ -6,7 +6,6 @@ import StyledLabel from "../../components/StyledLabel";
 import StyledTextInput from "../../components/StyledTextInput";
 import StyledLink from "../../components/StyledLink";
 
-
 const Profile = ({navigation}) => {
     const person = require('../../mocks/profile');
     const [firstName, setFirstName] = useState(person.firstName);
@@ -41,6 +40,6 @@ const Profile = ({navigation}) => {
         </ScrollView>
 
     )
-}
+};
 
 export default Profile

@@ -50,9 +50,8 @@ const OffersByOrder = ({navigation}) => {
                     </CollapseBody>
                 </Collapse>
 
-
                 <View style={{alignItems: "center"}}>
-                    <View style={styles.footer}></View>
+                    <View style={GlobalStyles.footer}></View>
                 </View>
             </View>
 
@@ -75,11 +74,7 @@ const OffersByOrder = ({navigation}) => {
     )
 };
 const styles = StyleSheet.create({
-    footer:{
-        width:"90%",
-        height:2,
-        backgroundColor: "#7786C2",
-    }
+
 });
 
 export default OffersByOrder
